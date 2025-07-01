@@ -1,0 +1,551 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "826b830c-7b45-40d3-8a13-702ebdb6338e": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "0a2f2b2a-988d-432d-be5a-b987c141ff7f": {
+          "type": "shopify://apps/prive-subscriptions/blocks/subs-widget-block/42050940-af72-406b-ba49-06f437b1dbb5",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "826b830c-7b45-40d3-8a13-702ebdb6338e",
+        "price",
+        "0a2f2b2a-988d-432d-be5a-b987c141ff7f",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12,
+        "section_bacground_color": "#e6eee6",
+        "section_bacground_color_mobile": "#e6eee6",
+        "sectionclass": "ooo-drink-s01",
+        "js_code": "document.addEventListener(\"click\", function(event) {\n    let clickedElement = event.target.closest(\"fieldset.the_Flavor_variant_legend .variant-image-input\");\n\n    if (clickedElement) {\n        let flavorName = clickedElement.value; // Get the input value\n        let newImageSrc = \"https://tryoutofoffice.com/cdn/shop/files/OOO_Drink_Site_Product_Images_CML_2.5MG.jpg?v=1739261132&width=600\"; \n\n        if (flavorName === \"Raspberry Lemonade\") {\n            newImageSrc = \"https://tryoutofoffice.com/cdn/shop/files/OOO_Drink_Site_Product_Images_RASLEM_2.5MG.jpg?v=1739261132\"; \n        }\n\n        document.querySelectorAll(\"fieldset.the_double_variant_legend img\").forEach(img => {\n            img.src = newImageSrc;\n        });\n\n        document.querySelector(\"fieldset.the_double_variant_legend .form__label \").innerHTML(flavorName);\n    }\n});\n\n// Check if the input with value \"Raspberry Lemonade\" is checked on page load\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n    let raspberryInput = document.querySelector('fieldset.the_Flavor_variant_legend .variant-image-input[value=\"Raspberry Lemonade\"]');\n\n    if (raspberryInput && raspberryInput.checked) {\n        document.querySelectorAll(\"fieldset.the_double_variant_legend img\").forEach(img => {\n            img.src = \"https://www.getsoul.com/cdn/shop/files/OOO_Drink_Site_Product_Images_RASLEM_5MG_128x.jpg?v=1739160201\";\n        });\n    }\n});\n\ndocument.addEventListener(\"click\", function(event) {\n    let clickedElement = event.target.closest(\"fieldset.the_double_variant_legend .variant-image-input\");\n\n    if (clickedElement) {\n        let flavorName = \"Strength: \"+clickedElement.value;\n\n        let labelElement = document.querySelector(\"fieldset.the_double_variant_legend .form__label\");\n        if (labelElement) {\n            labelElement.innerHTML = flavorName;\n        }\n    }\n});\n\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n    // Select the checked variant input inside the correct fieldset\n    let selectedInput = document.querySelector('fieldset.the_double_variant_legend .variant-image-input:checked');\n\n    if (selectedInput) {\n        let flavorName = \"Strength: \" + selectedInput.value;\n\n        let labelElement = document.querySelector(\"fieldset.the_double_variant_legend .form__label\");\n        if (labelElement) {\n            labelElement.innerHTML = flavorName;\n        }\n    }\n\n    document.querySelector('fieldset.the_double_variant_legend .variant-image-input[value=\"Single\"] + .variant-image-button .tooltip small').innerHTML = \"2.5mg THC\";\n    document.querySelector('fieldset.the_double_variant_legend .variant-image-input[value=\"Double\"] + .variant-image-button .tooltip small').innerHTML = \"5mg THC\";\n});",
+        "cssstyle_code": "@media screen and (max-width: 989px) {\n    .the_double_variant_legend .variant-image-button {\n        width: 82px !important;\n        margin-right: 5px !important;\n    }\n}\n@media screen and (max-width: 768px) {\n    .MainProduct_single_page .product__media_list .col img {\n        width: 47px !important;\n        height: auto;\n    }\n    .MainProduct_single_page .product__media_list .col p {\n        font-size: 12px !important;\n    }\n.MainProduct_single_page .product__media_list .col:nth-child(3) img {\n    width: 32px !important;\n}\n}\n@media (max-width: 767px) {\n    .MainProduct_single_page.ooo-drink-s01 {\n        background-color: #e6eee6;\n        padding-bottom: 50px;\n    }\n.MainProduct_single_page .product__media_list .col:nth-child(3) img {\n    width: 32px !important;\n}\n\n.the_Flavor_variant_legend .variant-image-button span.tooltip {\n    z-index: 1;\n    top: 109%;\n    left: 0%;\n    margin-left: 0px;\n}\n}"
+      }
+    },
+    "ooo_drink_video_XtaAkh": {
+      "type": "ooo-drink-video",
+      "settings": {
+        "videocode": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/1057670058?h=3c0608738b&badge=0&autopause=0&player_id=0&app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"Out Of Office Drink\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>",
+        "video": "shopify://files/videos/Soul_bottle_ocean_animation_LowQualityRender_v7.mp4",
+        "image": "shopify://shop_images/Screenshot_26.jpg",
+        "image2": "shopify://shop_images/Screenshot_26.jpg",
+        "section_bacground_color": "#e6eee6",
+        "section_bacground_color_mobile": "#e6eee6",
+        "sectionclass": "ooo-drink-s02"
+      }
+    },
+    "ooo_drink_got_you_covered_zMTLRH": {
+      "type": "ooo-drink-got-you-covered",
+      "blocks": {
+        "slide_pmkkia": {
+          "type": "slide",
+          "settings": {
+            "slide_title": "Love Alcohol, But Not Hangovers?",
+            "slide_image": "shopify://shop_images/OOOxBevLaunchxLifestyle-34.jpg",
+            "slide_description": "Out of Office Beverages give you a sociable buzz with none of the regrets."
+          }
+        },
+        "slidev_LVDyUR": {
+          "type": "slidev",
+          "settings": {
+            "video": "shopify://files/videos/All Flavors Web Tile_2.mp4",
+            "image2": "shopify://shop_images/Image_65.png"
+          }
+        },
+        "slide_jQaNMG": {
+          "type": "slide",
+          "settings": {
+            "slide_title": "Don’t Want To Drink Your Calories?",
+            "slide_image": "shopify://shop_images/OOOxBevLaunchxLifestyle-197.jpg",
+            "slide_description": "No need to skip out on the fun to avoid high-calorie cocktails or beers. Our THC Beverages contain 30 calories and good-for-you ingredients."
+          }
+        }
+      },
+      "block_order": [
+        "slide_pmkkia",
+        "slidev_LVDyUR",
+        "slide_jQaNMG"
+      ],
+      "settings": {
+        "title": "We've Got You Covered.",
+        "box_bacground_color": "#fffbe2",
+        "section_bacground_color": "#f4efd0",
+        "section_bacground_color_mobile": "#f4efd0",
+        "sectionclass": "ooo-drink-s03"
+      }
+    },
+    "ooo_product_differences_Wbkwzp": {
+      "type": "ooo-product-differences",
+      "blocks": {
+        "item_37DEei": {
+          "type": "item",
+          "settings": {
+            "title": "The Single",
+            "subtitle": "2.5Mg THC +  5Mg CBD",
+            "image": "shopify://shop_images/oo-p.png",
+            "body": "<ul><li><strong>Destination:</strong> Gentle Microdose</li><li><strong>Traveler:</strong><br/>New THC Users, Anyone<br/>Seeking A Subtle Lift</li><li><strong>Itinerary:</strong><br/>Checking emails, writing<br/>songs, and feeling vacay<br/>vibes at noon.</li></ul>",
+            "heading_bg": "#879b72",
+            "heading_bg2": "#879b72"
+          }
+        },
+        "item_EFbwnT": {
+          "type": "item",
+          "settings": {
+            "title": "The Double",
+            "subtitle": "5Mg THC + 10Mg CBD",
+            "image": "shopify://shop_images/oo-p.png",
+            "body": "<ul><li><strong>Destination:</strong> Perfect Buzz</li><li><strong>Traveler:</strong><br/>Veterans, New Users<br/>Ready For More</li><li><strong>Itinerary:</strong><br/>Watching a movie, going<br/>for a jog, meeting friends<br/>out at the bar.</li></ul>",
+            "heading_bg": "#879b72",
+            "heading_bg2": "#879b72"
+          }
+        }
+      },
+      "block_order": [
+        "item_37DEei",
+        "item_EFbwnT"
+      ],
+      "settings": {
+        "subtitle": "Which OOO Drink Is Right For You?",
+        "title": "Find Out Which OOO Drink \nDelivers <br>The High You Desire",
+        "image": "shopify://shop_images/life.png",
+        "animatioimage": "shopify://shop_images/BevLaunch_WEBP_HigherQ.webp",
+        "section_bacground_color": "#d2dcc7",
+        "section_bacground_color_mobile": "#d2dcc7",
+        "sectionclass": "ooo-drink-s04"
+      }
+    },
+    "7e03a3a7-8c2b-4599-9cdb-78636c9a9be6": {
+      "type": "Out-of-Office-Product-What-To-Expect",
+      "blocks": {
+        "088b3bcd-c5fe-4045-88c8-c4ec2eff2285": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Calm Energy",
+            "text": "<p>Enjoy a sociable buzz without feeling overwhelmed or out of control. That means more showing off on the dance floor and less wondering what you did last night.</p>"
+          }
+        },
+        "05a89e28-1f28-4178-ab93-63db1969ba7c": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Enhanced Focus",
+            "text": "<p>Brainstorming, gaming, deep conversations with friends? Out of Office THC Beverages are your one-way ticket to a clear creative buzz.</p>"
+          }
+        },
+        "559a5722-6cc5-451f-bc8e-15fc38dbc9dc": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "No Hangover, No Guilt",
+            "text": "<p>Wake up refreshed with no hangover, no heaviness, and no embarrassing texts to your ex. </p>"
+          }
+        },
+        "7e3b0ac1-cbb7-482e-bbd3-3f79b9aa8242": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Ingredients You Can Feel Good About",
+            "text": "<p>Out of Office beverages are made in America using organic hemp, spring water, and clean ingredients.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "088b3bcd-c5fe-4045-88c8-c4ec2eff2285",
+        "05a89e28-1f28-4178-ab93-63db1969ba7c",
+        "559a5722-6cc5-451f-bc8e-15fc38dbc9dc",
+        "7e3b0ac1-cbb7-482e-bbd3-3f79b9aa8242"
+      ],
+      "settings": {
+        "wave_img": false,
+        "background_img": true,
+        "subtitle": "What To Expect",
+        "title": "Turn Every Day Into A Vacay",
+        "image": "shopify://shop_images/s4.png",
+        "text_color": "#023940",
+        "text_bacground_color": "#e6eee6",
+        "section_bacground_color": "#cfd3de",
+        "section_bacground_color_mobile": "#cfd3de",
+        "sectionclass": "nightcap-thc-gummies-ps3"
+      }
+    },
+    "1b6840d3-dd48-43de-92b2-c5748c97eed0": {
+      "type": "Out-of-Office-Product-How-To-Use",
+      "settings": {
+        "subtitle": "How To Use",
+        "title": "High Spirit Without <span>The Spirits</span>",
+        "enable_gif": true,
+        "image": "shopify://shop_images/2025-02-01_How-to_animation_Desktop.gif",
+        "image2": "shopify://shop_images/2025-02-01_How-to_animation_Mobile.gif",
+        "section_bacground_color": "#fffce8",
+        "section_bacground_color_mobile": "#fffce8",
+        "sectionclass": "ooo-drink-s07"
+      }
+    },
+    "ef74a310-6690-48bc-8dbb-5ad5c2ff4da5": {
+      "type": "Out-of-Office-Product-Us-Vs-Them",
+      "blocks": {
+        "87765264-21db-4d3f-ae0f-b797ac6c176a": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "",
+            "ustitle": "OOO <br>DRINK",
+            "image": "shopify://shop_images/oo-bv2.svg",
+            "themetitle": "ALCOHOL",
+            "image2": "shopify://shop_images/ooo-o.svg"
+          }
+        },
+        "3dd90d97-d50a-449a-93db-65b93cb70be7": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Low Calorie",
+            "ustitle": "",
+            "image": "shopify://shop_images/ch.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/cr.svg"
+          }
+        },
+        "usvsthem_HM9mqp": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "No Hangover",
+            "ustitle": "",
+            "image": "shopify://shop_images/ch.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/cr.svg"
+          }
+        },
+        "usvsthem_NBfCJ7": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Controlled Experience",
+            "ustitle": "",
+            "image": "shopify://shop_images/ch.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/cr.svg"
+          }
+        },
+        "usvsthem_gVjiei": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Low Sugar",
+            "ustitle": "",
+            "image": "shopify://shop_images/ch.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/cr.svg"
+          }
+        },
+        "usvsthem_MBExwc": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Gluten Free",
+            "ustitle": "",
+            "image": "shopify://shop_images/ch.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/cr.svg"
+          }
+        },
+        "usvsthem_xPbeMi": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Good Sleep",
+            "ustitle": "",
+            "image": "shopify://shop_images/ch.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/cr.svg"
+          }
+        }
+      },
+      "block_order": [
+        "87765264-21db-4d3f-ae0f-b797ac6c176a",
+        "3dd90d97-d50a-449a-93db-65b93cb70be7",
+        "usvsthem_HM9mqp",
+        "usvsthem_NBfCJ7",
+        "usvsthem_gVjiei",
+        "usvsthem_MBExwc",
+        "usvsthem_xPbeMi"
+      ],
+      "settings": {
+        "show_svg": false,
+        "subtitle": "Us Vs. Them",
+        "title": "Now Every Day Can Feel Like A <span>Vacay</span>",
+        "image2": "shopify://shop_images/ps6-bg.png",
+        "section_bacground_color": "#e6eee6",
+        "section_bacground_color_mobile": "#e6eee6",
+        "sectionclass": "ooo-drink-s08"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "c006cb79-ce19-4cf2-948b-b12bd4712891": {
+      "type": "Out-of-Office-Product-Got-Questions",
+      "blocks": {
+        "1bd4532d-8466-48ce-a02a-15dd4d0aadc5": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "How will I feel after drinking Out of Office?",
+            "text": "<p>Expect a light, relaxed, and elevated feeling. Our carefully balanced blend is designed to help you unwind and feel good without the next-day regrets. It’s like vacation mode in a can.</p>"
+          }
+        },
+        "5f6ca34e-85a3-4743-a6cf-21c07b31f2fa": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "How long does it take to kick in?",
+            "text": "<p>You can start feeling the effects within 15-30 minutes, thanks to our fast-acting formula. Everyone's body is different, but most people experience the onset fairly quickly compared to traditional edibles.</p>"
+          }
+        },
+        "subscribesave_NtiNzc": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "How long do the effects last?",
+            "text": "<p>The effects generally last 1.5 to 3 hours, depending on your tolerance, metabolism, and the amount consumed. We recommend starting with one can and seeing how you feel before sipping more.</p>"
+          }
+        },
+        "subscribesave_wUQK7t": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Can I drink more than one?",
+            "text": "<p>Yes, Out of Office is designed to be stackable. You can enjoy more than one to extend or amplify the experience. Just sip slowly and see how you feel before having another.</p>"
+          }
+        },
+        "subscribesave_4DQhNn": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Will I get a hangover?",
+            "text": "<p>Nope! One of the best parts about Out of Office is that you can enjoy the good vibes without the next-day crash. Say goodbye to hangovers and hello to feeling refreshed.</p>"
+          }
+        },
+        "subscribesave_HJJknh": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Is it legal?",
+            "text": "<p>Out of Office beverages are federally legal under the 2018 Farm Bill. However, state laws can vary, so check your local regulations before ordering.</p>"
+          }
+        },
+        "subscribesave_9pGzYV": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Can I drink it anywhere?",
+            "text": "<p>While our beverages are legal on a federal level, consumption laws vary by state. Treat it like alcohol—enjoy it responsibly and follow local regulations.</p>"
+          }
+        },
+        "subscribesave_jDzPxD": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "What if I’m new to this kind of beverage?",
+            "text": "<p>Out of Office is beginner-friendly. Our lower-dose option is perfect if you’re new to these types of drinks. Start with one can, sip slowly, and ease into your experience.</p>"
+          }
+        },
+        "subscribesave_CQpHM8": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "How should I store it?",
+            "text": "<p>Keep Out of Office beverages cool and away from direct sunlight. Refrigeration is ideal but not required. Chill before drinking for the best experience.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1bd4532d-8466-48ce-a02a-15dd4d0aadc5",
+        "5f6ca34e-85a3-4743-a6cf-21c07b31f2fa",
+        "subscribesave_NtiNzc",
+        "subscribesave_wUQK7t",
+        "subscribesave_4DQhNn",
+        "subscribesave_HJJknh",
+        "subscribesave_9pGzYV",
+        "subscribesave_jDzPxD",
+        "subscribesave_CQpHM8"
+      ],
+      "settings": {
+        "subtitle": "You’ve Got Questions",
+        "title": "We’ve Got Answers.",
+        "section_bacground_color": "#f4efd0",
+        "section_bacground_color_mobile": "#f4efd0",
+        "sectionclass": "ooo-drink-s09"
+      }
+    },
+    "450d5aab-7a5d-4a1b-9e9f-38f44d69ec04": {
+      "type": "product-reviews-io",
+      "settings": {
+        "enable_title": true,
+        "title": "Everyone is Talking",
+        "enable_custom_product": false,
+        "product": "",
+        "section_bacground_color": "#e6eee6",
+        "section_bacground_color_mobile": "#e6eee6",
+        "sectionclass": "ooo-drink-s10"
+      }
+    },
+    "out_of_office_product_you_might_also_like_UgF9XP": {
+      "type": "Out-of-Office-Product-You-Might-Also-Like",
+      "blocks": {
+        "products_FLQpWX": {
+          "type": "products",
+          "settings": {
+            "title": "Out of Office THC Gummies",
+            "subtitle": "1.5mg THC + 15mg CBD",
+            "price": "$54.00 – $75.00",
+            "image": "shopify://shop_images/ooo-triple-pdp-1_01690510-a3dc-46ea-9e44-2e3771f6b2e6.jpg",
+            "llink": "https://www.getsoul.com/products/out-of-office-gummies"
+          }
+        },
+        "products_amNjw3": {
+          "type": "products",
+          "settings": {
+            "title": "Big Brain Capsules",
+            "subtitle": "Fully Focused. Never Frantic.",
+            "price": "$62.00",
+            "image": "shopify://shop_images/4capsule-bottle-template.jpg",
+            "llink": "https://www.getsoul.com/products/big-brain-capsules"
+          }
+        },
+        "products_hctyFG": {
+          "type": "products",
+          "settings": {
+            "title": "Happi Gummies",
+            "subtitle": "Sunshine for your brain.",
+            "price": "$70.00",
+            "image": "shopify://shop_images/happi-3.jpg",
+            "llink": "https://www.getsoul.com/products/happi-mood-gummies"
+          }
+        },
+        "products_wrArKe": {
+          "type": "products",
+          "settings": {
+            "title": "Sleepi Gummies",
+            "subtitle": "A tasty treat for better sleep.",
+            "price": "$70.00",
+            "image": "shopify://shop_images/3gummy-bottle-template.jpg",
+            "llink": "https://www.getsoul.com/products/sleepi-gummies"
+          }
+        }
+      },
+      "block_order": [
+        "products_FLQpWX",
+        "products_amNjw3",
+        "products_hctyFG",
+        "products_wrArKe"
+      ],
+      "settings": {
+        "title": "You Might Also Like",
+        "image": "shopify://shop_images/OOOxBevLaunch-67.jpg",
+        "section_bacground_color": "#f4efd0",
+        "section_bacground_color_mobile": "#f4efd0",
+        "sectionclass": "ooo-drink-s11"
+      }
+    },
+    "age_gate_md9wwc": {
+      "type": "age_gate",
+      "settings": {
+        "heading": "By clicking \"Enter\" you verify that you are 21 years of age or older.",
+        "yes_button": "Enter",
+        "no_button": "Exit",
+        "exit_link": "/",
+        "cookie_handle": "user_age"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ooo_drink_video_XtaAkh",
+    "ooo_drink_got_you_covered_zMTLRH",
+    "ooo_product_differences_Wbkwzp",
+    "7e03a3a7-8c2b-4599-9cdb-78636c9a9be6",
+    "1b6840d3-dd48-43de-92b2-c5748c97eed0",
+    "ef74a310-6690-48bc-8dbb-5ad5c2ff4da5",
+    "related-products",
+    "c006cb79-ce19-4cf2-948b-b12bd4712891",
+    "450d5aab-7a5d-4a1b-9e9f-38f44d69ec04",
+    "out_of_office_product_you_might_also_like_UgF9XP",
+    "age_gate_md9wwc"
+  ]
+}

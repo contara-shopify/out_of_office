@@ -1,0 +1,61 @@
+<style type="text/css">
+  {% if section.settings.section_bacground_color != blank %}
+    .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}{
+      background-color:{{section.settings.section_bacground_color}};
+    }
+  {% endif %}
+
+  .outf_st_titleonly{}
+  .outf_st_titleonly .inner{}
+  .outf_st_titleonly .outf_st_titleo{}
+
+  @media (max-width: 767px){
+    {% if section.settings.section_bacground_color_mobile != blank %}
+      .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}{
+        background-color:{{section.settings.section_bacground_color_mobile}};
+      }
+    {% endif %}
+  }
+</style>
+
+<div class="outf_st_titleonly uid{{ section.id }} {{ section.settings.sectionclass }}">
+  <div class="inner">
+    <p class="outf_st_titleo">{{ section.settings.title  }}</p>
+  </div>
+</div>
+
+{% schema %}
+{
+    "name": "Title Only (Product)",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "Everyone is Talking"
+        },
+        {
+          "type": "color",
+          "id": "section_bacground_color",
+          "label": "Desktop Background Color"
+        },
+        {
+          "type": "color",
+          "id": "section_bacground_color_mobile",
+          "label": "Mobile Background Color"
+        },
+        {
+          "type": "text",
+          "id": "sectionclass",
+          "label": "Section Class",
+        }
+    ],
+    "presets": [
+        {
+          "name": "Title Only (Product)"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,495 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "826b830c-7b45-40d3-8a13-702ebdb6338e": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "0a2f2b2a-988d-432d-be5a-b987c141ff7f": {
+          "type": "shopify://apps/recurly-commerce-by-prive/blocks/subs-widget-block/42050940-af72-406b-ba49-06f437b1dbb5",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "826b830c-7b45-40d3-8a13-702ebdb6338e",
+        "price",
+        "0a2f2b2a-988d-432d-be5a-b987c141ff7f",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12,
+        "section_bacground_color": "",
+        "section_bacground_color_mobile": "",
+        "sectionclass": "",
+        "js_code": "",
+        "cssstyle_code": ""
+      }
+    },
+    "ooo_product_differences_6VQt79": {
+      "type": "ooo-product-differences",
+      "blocks": {
+        "item_L4fG8t": {
+          "type": "item",
+          "settings": {
+            "title": "The Single",
+            "subtitle": "1.5MG THC | 15Mg CBD",
+            "image": "shopify://shop_images/ooo-single.webp",
+            "body": "<ul><li><strong>Destination:</strong> <br/>Gentle Microdose</li><li><strong>Traveler:</strong><br/>New THC Users, Anyone Seeking A Subtle Lift</li><li><strong>Itinerary:</strong><br/>Checking emails, writing songs, and feeling vacay vibes at noon.</li></ul>",
+            "heading_bg": "#fff5b4",
+            "heading_bg2": ""
+          }
+        },
+        "item_hNBVdj": {
+          "type": "item",
+          "settings": {
+            "title": "The Double",
+            "subtitle": "3MG THC | 30MG CBD",
+            "image": "shopify://shop_images/ooo-bouble.webp",
+            "body": "<ul><li><strong>Destination:</strong> <br/>Perfect Buzz</li><li><strong>Traveler:</strong><br/>Veterans, New Users Ready For More</li><li><strong>Itinerary:</strong><br/>Watching a movie, going for a jog, meeting friends out at the bar.</li></ul>",
+            "heading_bg": "#d9f3ee",
+            "heading_bg2": ""
+          }
+        },
+        "item_Ttc7DK": {
+          "type": "item",
+          "settings": {
+            "title": "The Triple",
+            "subtitle": "6MG THC | 45MG CBD",
+            "image": "shopify://shop_images/ooo-triple.webp",
+            "body": "<ul><li><strong>Destination:</strong> <br/>Noticeably High</li><li><strong>Traveler:</strong><br/>THC Users Who Want To Feel High, Semi-Newbies Seeking Blast-Off</li><li><strong>Itinerary:</strong><br/>Going to a party, going to a concert, going deep on a streaming binge.</li></ul>",
+            "heading_bg": "#e0efc4",
+            "heading_bg2": ""
+          }
+        },
+        "item_BqHB3a": {
+          "type": "item",
+          "settings": {
+            "title": "The Quad",
+            "subtitle": "10MG THC | 45MG CBD",
+            "image": "shopify://shop_images/ooo-triple_2.png",
+            "body": "<ul><li><strong>Destination:</strong> <br/>Fully Lit</li><li><strong>Traveler:</strong><br/>THC Users Who Believe More is More, Those Who Know Their Dose</li><li><strong>Itinerary:</strong><br/>Playing music, playing video games, being outside, contemplating existence.</li></ul>",
+            "heading_bg": "#fdcca4",
+            "heading_bg2": ""
+          }
+        },
+        "item_PbXjtY": {
+          "type": "item",
+          "settings": {
+            "title": "The Fifteen",
+            "subtitle": "15MG THC | 45MG THC",
+            "image": "shopify://shop_images/OOO-fifteen-transparent_cropped.png",
+            "body": "<ul><li><strong>Destination:</strong> <br/>Higher Altitudes</li><li><strong>Traveler:</strong><br/>Frequent Flyers, Users with High Tolerances</li><li><strong>Itinerary:</strong><br/>Listening to music, watching a visually stunning movie, staring at the stars.</li></ul>",
+            "heading_bg": "#fccfd1",
+            "heading_bg2": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_L4fG8t",
+        "item_hNBVdj",
+        "item_Ttc7DK",
+        "item_BqHB3a",
+        "item_PbXjtY"
+      ],
+      "settings": {
+        "subtitle": "Which OOO Gummies Are Right For You?",
+        "title": "Find Out Which Out Of Office Gummies<br>\nDeliver The High You Desire.",
+        "image": "shopify://shop_images/IMG_3439_1.png",
+        "section_bacground_color": "#fffaf5",
+        "section_bacground_color_mobile": "#fffaf5",
+        "sectionclass": ""
+      }
+    },
+    "7e03a3a7-8c2b-4599-9cdb-78636c9a9be6": {
+      "type": "Out-of-Office-Product-What-To-Expect",
+      "blocks": {
+        "e63d809e-e150-4cfd-b722-5db8dff6fe52": {
+          "type": "usvsthem",
+          "disabled": true,
+          "settings": {
+            "title": "A Microdosed Experience",
+            "text": "<p>It’s a small amount of THC, so you can get buzzed, not blitzed.</p>"
+          }
+        },
+        "088b3bcd-c5fe-4045-88c8-c4ec2eff2285": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Immediate Enjoyment",
+            "text": "<p>These delightful little treats are fast acting, without being overwhelming.</p>"
+          }
+        },
+        "05a89e28-1f28-4178-ab93-63db1969ba7c": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Replace Your Glass Of Wine",
+            "text": "<p>You get a mild buzz, without having to drink. Gummies &gt; hangovers!</p>"
+          }
+        },
+        "559a5722-6cc5-451f-bc8e-15fc38dbc9dc": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Enhanced Focus And Creativity",
+            "text": "<p>Whether you've got a full inbox to clear or you're creating a symphony, Out of Office can help you get there.</p>"
+          }
+        },
+        "7e3b0ac1-cbb7-482e-bbd3-3f79b9aa8242": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Melatonin Substitute",
+            "text": "<p>We know melatonin isn't for everyone. With Out of Office, your sleep can still be on point!</p>"
+          }
+        },
+        "41c03eae-ffe0-4059-ab08-e472e78fb411": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "The Most Delicious",
+            "text": "<p>We know how to make everything taste great. Did you expect anything less?</p>"
+          }
+        }
+      },
+      "block_order": [
+        "e63d809e-e150-4cfd-b722-5db8dff6fe52",
+        "088b3bcd-c5fe-4045-88c8-c4ec2eff2285",
+        "05a89e28-1f28-4178-ab93-63db1969ba7c",
+        "559a5722-6cc5-451f-bc8e-15fc38dbc9dc",
+        "7e3b0ac1-cbb7-482e-bbd3-3f79b9aa8242",
+        "41c03eae-ffe0-4059-ab08-e472e78fb411"
+      ],
+      "settings": {
+        "wave_img": true,
+        "background_img": false,
+        "subtitle": "What To Expect",
+        "title": "Unwind like you’re on Vacay.",
+        "image": "shopify://shop_images/product-i.jpg",
+        "image2": "shopify://shop_images/product-im.jpg",
+        "text_color": "",
+        "text_bacground_color": "",
+        "section_bacground_color": "",
+        "section_bacground_color_mobile": "",
+        "sectionclass": ""
+      }
+    },
+    "1b6840d3-dd48-43de-92b2-c5748c97eed0": {
+      "type": "Out-of-Office-Product-How-To-Use",
+      "settings": {
+        "subtitle": "How To Use",
+        "title": "Raise your <span>gummies,</span> not your glass.",
+        "enable_gif": false,
+        "image": "shopify://shop_images/plane-gif-desktop.gif",
+        "image2": "shopify://shop_images/plane-gif-mobile.gif",
+        "section_bacground_color": "",
+        "section_bacground_color_mobile": "",
+        "sectionclass": ""
+      }
+    },
+    "ef74a310-6690-48bc-8dbb-5ad5c2ff4da5": {
+      "type": "Out-of-Office-Product-Us-Vs-Them",
+      "blocks": {
+        "87765264-21db-4d3f-ae0f-b797ac6c176a": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "",
+            "ustitle": "OOO <br>GUMMIES",
+            "image": "shopify://shop_images/Path_2371.svg",
+            "themetitle": "THE OTHER <br>GUYS",
+            "image2": "shopify://shop_images/Group_1480.svg"
+          }
+        },
+        "3dd90d97-d50a-449a-93db-65b93cb70be7": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "A Dose You Can Feel",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/closse.svg"
+          }
+        },
+        "352952f1-1894-43d1-a181-508ddeb8e8e9": {
+          "type": "usvsthem",
+          "disabled": true,
+          "settings": {
+            "title": "Won’t Send You Into Orbit",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/closse.svg"
+          }
+        },
+        "9588f657-07f7-4c64-ab3e-4fe3d89ba52a": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Delicious (Duh!)",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/closse.svg"
+          }
+        },
+        "4f8f0e43-892c-492a-be75-435f3fa38562": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "No Fake Stuff",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/closse.svg"
+          }
+        },
+        "e600a6fe-be41-4d77-8e68-f4c30372a4e6": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Organically Grown Hemp",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/closse.svg"
+          }
+        },
+        "7f52bef5-574c-4fce-b6ad-8dc9b8bba574": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Low Sugar (2G)",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/closse.svg"
+          }
+        },
+        "af0b915a-2a40-4a8b-8c57-39f0d2d70954": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Vegan & Gluten Free",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/closse.svg"
+          }
+        }
+      },
+      "block_order": [
+        "87765264-21db-4d3f-ae0f-b797ac6c176a",
+        "3dd90d97-d50a-449a-93db-65b93cb70be7",
+        "352952f1-1894-43d1-a181-508ddeb8e8e9",
+        "9588f657-07f7-4c64-ab3e-4fe3d89ba52a",
+        "4f8f0e43-892c-492a-be75-435f3fa38562",
+        "e600a6fe-be41-4d77-8e68-f4c30372a4e6",
+        "7f52bef5-574c-4fce-b6ad-8dc9b8bba574",
+        "af0b915a-2a40-4a8b-8c57-39f0d2d70954"
+      ],
+      "settings": {
+        "show_svg": true,
+        "subtitle": "Us Vs. Them",
+        "title": "Now every day can feel like a <span>Vacay.</span>",
+        "image2": "shopify://shop_images/DSC06819.jpg",
+        "section_bacground_color": "",
+        "section_bacground_color_mobile": "",
+        "sectionclass": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "c006cb79-ce19-4cf2-948b-b12bd4712891": {
+      "type": "Out-of-Office-Product-Got-Questions",
+      "blocks": {
+        "1bd4532d-8466-48ce-a02a-15dd4d0aadc5": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "What ingredients are used in Out of Office Gummies?",
+            "text": "<p>Discover THC – your endocannabinoid system's ultimate party-starter! Like the life of a party, it brings a gentle buzz and euphoria to the scene. Each dose offers a creative boost or a chance to unwind. Say farewell to the usual routine and embrace the enchantment of this magic compound. Whether you want to switch up your relaxation method or enhance social gatherings, THC is here for you. It's a vacation encapsulated in every gummy, where relaxation and good vibes merge.</p>"
+          }
+        },
+        "5f6ca34e-85a3-4743-a6cf-21c07b31f2fa": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "How should I incorporate Out of Office Gummies into my daily routine?",
+            "text": "<p>Microdosing involves consuming minuscule, non-intoxicating amounts of THC, the magic compound found in cannabis. The goal? To harness the therapeutic benefits without the rollercoaster ride of getting high. It's like sipping a cup of focus and relaxation in perfect harmony. With just a whisper of THC, individuals are exploring enhanced mood, reduced anxiety, and improved creativity, all while keeping a steady hand on the steering wheel of their day. It's about embracing the subtleties, finding that sweet spot, and letting THC complement your life like a well-choreographed partner.</p>"
+          }
+        },
+        "c86b3dbd-ff82-4247-9e65-80f0864e4235": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Are Out of Office Gummies suitable for vegans?",
+            "text": "<p>In the hustle and bustle of the modern world, THC is emerging as an unexpected ally for everyday professionals. No longer confined to stereotypical scenes, it's finding its way into the routines of people who value focus, balance, and clarity. Picture the go-getter diving into their tasks with renewed energy, or the creative mind exploring uncharted territories of imagination. THC, when microdosed skillfully, becomes a quiet collaborator, enhancing productivity without the buzz. It's not about escaping reality, but rather about optimizing it – infusing the ordinary with a touch of extraordinary. As professionals seek a harmonious blend of work and well-being, THC is quietly stepping into the limelight, reminding us that it's not just about the destination, but the journey itself.</p>"
+          }
+        },
+        "276cf8b1-b75d-45e7-acb3-87c78e271ed5": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Are there any potential side effects I should be aware of when using Out of Office Gummies?",
+            "text": "<p>Let's talk about Hemp-derived THC and its legal side. THC is a compound primarily found in the cannabis plant. It's the psychoactive component responsible for the \"high\" sensation commonly associated with marijuana use. However, when derived from hemp, a specific variety of the cannabis plant, THC takes on a different legal status. Thanks to the 2018 Farm Bill, Hemp-derived THC is considered legal as long as it contains no more than 0.3% by weight. This bill sets the rules for what's allowed when it comes to THC content in certain products. So, if you're staying within that 0.3% limit, you're on the right side of the legal fence. (Important sidenote - that includes ALL Soul current & future products 😀)</p>"
+          }
+        },
+        "02912810-2cd7-400e-a8f4-2d855be377a0": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Can I take Out of Office Gummies with other supplements or medications?",
+            "text": "<p>When it comes to finding your perfect THC dose, it's all about a personalized journey. Start off on the chill side with a low dose – this gives you a chance to gauge your body's vibes and dodge any overwhelming effects, especially if you're new to the THC scene. Give it some time (around 1 to 2 hours) to work its magic, and why not keep a little journal of your adventure? Note the time it takes for the effects to kick in, how strong they hit, and any unexpected reactions.</p>"
+          }
+        },
+        "8b4f4690-b72a-4b97-8ed8-82bb07af57e1": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Is there a money-back guarantee for Out of Office Gummies?",
+            "text": "<p>Timing holds the key – THC dances to its own tune, affected by metabolism, dose, sensitivity, and the recipe. Imagine your body and the compound moving in sync to craft your special THC journey. However, remember, THC isn't in a hurry. It usually takes 30 minutes to 2 hours to make an appearance. It's like a leisurely waltz with your digestive system, transforming into a stronger THC version as it passes through your liver.</p>"
+          }
+        },
+        "fb079e1f-e1df-4846-ab89-78ddb260e2d0": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "How quickly can I expect to see results after starting to use Out of Office Gummies?",
+            "text": "<p>Just a quick note: enjoying Hemp-derived THC might show up on a drug test. These tests can detect specific substances and their presence in your system. How long they're detectable depends on factors like metabolism, frequency of use, and test sensitivity.</p>"
+          }
+        },
+        "4161c379-4ee9-40d0-a1e7-55e636396f5a": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Where can I purchase Out of Office Gummies, and do you ship internationally?",
+            "text": "<p>When considering THC, there's lots to remember. Start by knowing your purpose – whether for fun, relief, or something else. Begin with a small dose to gauge your body's response. Choose a method that suits you, understanding onset and duration of effects. Ensure a comfortable and safe environment. Consider your health, medications, and potential interactions. Be prepared for side effects and avoid tasks requiring focus. Approach THC carefully if you have a history of mental health issues. Stay balanced and responsible in sourcing and adhering to regulations. For medical use, consult a doctor; experts are here for legal and health queries.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1bd4532d-8466-48ce-a02a-15dd4d0aadc5",
+        "5f6ca34e-85a3-4743-a6cf-21c07b31f2fa",
+        "c86b3dbd-ff82-4247-9e65-80f0864e4235",
+        "276cf8b1-b75d-45e7-acb3-87c78e271ed5",
+        "02912810-2cd7-400e-a8f4-2d855be377a0",
+        "8b4f4690-b72a-4b97-8ed8-82bb07af57e1",
+        "fb079e1f-e1df-4846-ab89-78ddb260e2d0",
+        "4161c379-4ee9-40d0-a1e7-55e636396f5a"
+      ],
+      "settings": {
+        "subtitle": "You’ve Got Questions",
+        "title": "We’ve Got Answers.",
+        "section_bacground_color": "",
+        "section_bacground_color_mobile": "",
+        "sectionclass": ""
+      }
+    },
+    "450d5aab-7a5d-4a1b-9e9f-38f44d69ec04": {
+      "type": "product-reviews-io",
+      "settings": {
+        "enable_title": false,
+        "title": "Everyone is Talking",
+        "enable_custom_product": false,
+        "product": "",
+        "section_bacground_color": "",
+        "section_bacground_color_mobile": "",
+        "sectionclass": ""
+      }
+    },
+    "age_gate_V9LLFT": {
+      "type": "age_gate",
+      "settings": {
+        "heading": "By clicking \"Enter\" you verify that you are 21 years of age or older.",
+        "yes_button": "Enter",
+        "no_button": "Exit",
+        "exit_link": "/",
+        "cookie_handle": "user_age"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ooo_product_differences_6VQt79",
+    "7e03a3a7-8c2b-4599-9cdb-78636c9a9be6",
+    "1b6840d3-dd48-43de-92b2-c5748c97eed0",
+    "ef74a310-6690-48bc-8dbb-5ad5c2ff4da5",
+    "related-products",
+    "c006cb79-ce19-4cf2-948b-b12bd4712891",
+    "450d5aab-7a5d-4a1b-9e9f-38f44d69ec04",
+    "age_gate_V9LLFT"
+  ]
+}

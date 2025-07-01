@@ -1,0 +1,279 @@
+<style type="text/css">
+  .pro_vacay_differences {
+      background-position: right top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #FFFFEA;
+  }
+  .pro_vacay_differences .pvd__inner {
+      /* max-width: 1200px; */
+      margin: auto;
+      position: relative;
+      padding: 121px 0px 62px 0px;
+      width: 75%;
+  }
+  .pro_vacay_differences .pvd__subtitle {
+      font-size: 24px;
+      font-weight: 600!important;
+      font-family: Poppins,sans-serif;
+      font-style: normal;
+      line-height: 1.2;
+      word-wrap: break-word;
+      margin: 0px;
+      letter-spacing: -0.5px;
+      padding-bottom: 33px;
+      text-align: center;
+  }
+  .pro_vacay_differences .pvd__title {
+      font-size: 34px;
+      font-weight: 700 !important;
+      margin: 0 0 17.5px;
+      font-family: Poppins,sans-serif;
+      line-height: 1.2;
+      word-wrap: break-word;
+      letter-spacing: -0.7px;
+      text-align: center;
+      padding-left: 6px;
+      margin-bottom: 60px;
+      font-family: Raspberie;
+  }
+
+  .pro_vacay_differences .pvd__items{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .pro_vacay_differences .pvd__item{
+    width: 23.5%;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 40px 20px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 30px;
+        margin: 0 1%;
+  }
+  .pro_vacay_differences .pvd__item_head{
+        text-align: center;
+    margin-top: -40px;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-bottom: 20px;
+    padding-top: 32px;
+    padding-bottom: 27px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .pro_vacay_differences .pvd__item_subhead{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .pro_vacay_differences .pvd__item img{
+        max-width: 140px;
+    margin-bottom: 15px;
+  }
+  .pro_vacay_differences article{
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+  }
+  .pro_vacay_differences article ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.5;
+  }
+  .pro_vacay_differences article li{
+        border-top: solid 1px #2F5C5E;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .pro_vacay_differences article li:first-child{
+        border-top: 0;
+  }
+  .pro_vacay_differences_img{
+    position: absolute;
+    width: 450px;
+    left: -120px;
+    top: -140px;
+  }
+  {% if section.settings.section_bacground_color != blank %}
+    .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}{
+      background-color:{{section.settings.section_bacground_color}};
+    }
+  {% endif %}
+  @media (max-width: 1080px) and (min-width: 768px){
+    .pro_vacay_differences .pvd__item{
+      padding: 20px;
+      padding-bottom: 20px;
+      width:32%;
+    }
+    .pro_vacay_differences .pvd__item_head{
+      margin-top: -20px;
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-top: 19px;
+      padding-bottom: 16px;
+    }
+    .pro_vacay_differences .pvd__item_subhead{
+      font-size:14px;
+    }
+  }
+  @media (max-width: 767px){
+    {% if section.settings.section_bacground_color_mobile != blank %}
+      .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}{
+        background-color:{{section.settings.section_bacground_color_mobile}};
+      }
+    {% endif %}
+    .pro_vacay_differences .pvd__inner {
+        padding: 60px 0px 10px 0px;
+        width: 100%;
+    }
+    .pro_vacay_differences .pvd__title {
+        font-size: 30px;
+        letter-spacing: -0.1px;
+        padding-left: 0px;
+        margin-bottom: 40px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .pro_vacay_differences .pvd__subtitle {
+        font-size: 22px;
+        padding-bottom: 10px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .pro_vacay_differences .pvd__items{
+          display: block;
+      max-width: 400px;
+      width: 90%;
+    }
+    .pro_vacay_differences .pvd__item{
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .pro_vacay_differences_img{
+      width: 130px;
+      left: -40px;
+      top: -40px;
+    }
+  }
+</style>
+
+<div class="pro_vacay_differences uid{{ section.id }} {{ section.settings.sectionclass }}">
+  
+  <div class="pvd__inner">
+    <img class="pro_vacay_differences_img" src="{{ section.settings.image | img_url:'' }}" alt="">
+    <p class="pvd__subtitle">{{ section.settings.subtitle }}</p>
+    <p class="pvd__title">{{ section.settings.title }}</p>
+    
+    <div class="pvd__items">
+      {% for block in section.blocks %}
+        <div class="pvd__item">
+          <p class="pvd__item_head" style="background-color:{{ block.settings.heading_bg }};">{{ block.settings.title }}</p>
+          <p class="pvd__item_subhead" {% if block.settings.heading_bg2 != blank %}style="background-color:{{ block.settings.heading_bg2 }};"{% endif %}>{{ block.settings.subtitle }}</p>
+          <img src="{{ block.settings.image | img_url:'' }}" alt="">
+          <article>{{ block.settings.body }}</article>
+        </div>
+      {% endfor %} 
+    </div>
+    {% if section.settings.animatioimage != blank %}
+    <div class="pvd_animation_img">
+      <img src="{{ section.settings.animatioimage | img_url:'' }}" alt="">
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+    "name": "OOO Product Differences",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Sub-Title",
+          "default": "How To Use"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": " Raise Your Gummies, Not Your Glass."
+        },
+        {
+              "type":"image_picker",
+              "id":"image",
+              "label":"Image"
+        },
+        {
+              "type":"image_picker",
+              "id":"animatioimage",
+              "label":"Animation Image"
+        },
+        {
+          "type": "color",
+          "id": "section_bacground_color",
+          "label": "Desktop Background Color"
+        },
+        {
+          "type": "color",
+          "id": "section_bacground_color_mobile",
+          "label": "Mobile Background Color"
+        },
+        {
+          "type": "text",
+          "id": "sectionclass",
+          "label": "Section Class",
+        }
+    ],
+    "blocks": [
+        {
+        "type":"item",
+        "name": "Item",
+        "settings": [
+            {
+                "type":"text",
+                "label": "Title",
+                "id": "title"
+            },
+            {
+                "type":"text",
+                "label": "SubTitle",
+                "id": "subtitle"
+            },
+            {
+              "type":"image_picker",
+              "id":"image",
+              "label":"Image"
+            },
+            {
+                "type":"richtext",
+                "label": "Content",
+                "id": "body"
+            },
+            {
+                "type":"color",
+                "label": "Title Background",
+                "id": "heading_bg"
+            },
+            {
+                "type":"color",
+                "label": "Sub-Title Background",
+                "id": "heading_bg2"
+            }
+          ]
+        }
+    ],
+    "presets": [
+        {
+          "name": "OOO Product Differences",
+          "blocks": []
+        }
+    ]
+}
+{% endschema %}

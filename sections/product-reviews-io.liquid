@@ -1,0 +1,200 @@
+{% if section.settings.sectionclass != blank %}
+<style type="text/css">
+.uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}{ position: relative; }
+  {% if section.settings.section_bacground_color != blank %}
+    .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %},
+    .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} #ReviewsWidget{
+      background-color:{{section.settings.section_bacground_color}} !important;
+    }
+  {% endif %}
+
+.uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} .rebuy-widget {
+    display: none !important;
+}
+.uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}:after {
+    content: "";
+    background-image: url(https://cdn.shopify.com/s/files/1/0383/5717/2364/files/clock.png?v=1734880809);
+    background-position: left top;
+    background-size: cover;
+    position: absolute;
+    top: -133px;
+    left: 0px;
+    width: 172px;
+    height: 410px;
+}
+.uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} .ElementsWidget-prefix{
+    padding-right: 13px;
+    max-width: 1073px;
+}
+.uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} .ElementsWidget-prefix .R-PaginationControls {
+    padding-top: 68px;
+}
+.uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} .ElementsWidget-prefix .R-PaginationControls .R-PaginationControls__item{
+    border: 0px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} .ElementsWidget-prefix .R-PaginationControls .R-PaginationControls__item .R-TextHeading{}
+.uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} .ElementsWidget-prefix .R-PaginationControls .R-PaginationControls__item.isActive{
+    /* padding-right: 89px; */
+}
+.uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} .ElementsWidget-prefix .R-PaginationControls .R-PaginationControls__item.isActive:after{
+  content:"";
+  width: 97px;
+  height: 2px;
+  background-color: black;
+  margin-left: 36px;
+  margin-top: 13px;
+}
+.uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} .ElementsWidget-prefix .u-textRight--all {
+    text-align: right !important;
+    display: none;
+}
+.nightcap-thc-gummies-ps7 .ElementsWidget-prefix .ElementsWidget .R-ContentList .R-ContentList__item {
+    background-color: #EBEFFF;
+}
+@media (max-width:1200px){
+  .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}:after {
+      top: -90px;
+      left: 0px;
+      width: 109px;
+      height: 260px;
+  }
+}
+@media (max-width:1024px){
+  .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}:after {
+      top: -100px;
+      left: 0px;
+      width: 130px;
+      height: 312px;
+  }
+}
+@media (max-width:768px){
+    .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} .ElementsWidget-prefix .R-PaginationControls .R-PaginationControls__item.isActive:after{
+      display:none;
+    }
+    .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} .ElementsWidget-prefix {
+        padding-right: 0px;
+    }
+    {% if section.settings.section_bacground_color_mobile != blank %}
+      .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %},
+      .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} #ReviewsWidget{
+        background-color:{{section.settings.section_bacground_color_mobile}} !important;
+      }
+    {% endif %}
+
+    .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}:after {
+        display:none;
+    }
+    .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} #ReviewsWidget h2 {
+        padding-top: 60px !important;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} .ElementsWidget-prefix {
+        padding-right: 13px;
+        max-width: 1073px;
+        padding-top: 30px;
+    }
+    .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} .ElementsWidget-prefix .R-PaginationControls {
+        padding-top: 10px;
+    }
+    .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %} #ReviewsWidget {
+        padding-bottom: 30px !important;
+    }
+}
+
+  .outf_st_titleonly{}
+  .outf_st_titleonly .inner {
+      width: 85%;
+      margin: 0px auto;
+      max-width: 969px;
+      padding-top: 100px;
+  }
+  .outf_st_titleonly .outf_st_titleo{
+    font-family: 'Raspberie';
+    margin: 0px;
+    font-size: 43.4px;
+    line-height: 1.06;
+    letter-spacing: -0.9px;
+    color: #4E4A4A;
+    text-align: center;
+  }
+
+  .nightcap-thc-gummies-ps7 #ReviewsWidget{}
+  .nightcap-thc-gummies-ps7 #ReviewsWidget .ElementsWidget-prefix{}
+</style>
+{% endif %}
+
+<div class="product-reviews-npdp uid{{ section.id }} {{ section.settings.sectionclass }}">
+{% if section.settings.enable_title %}
+<div class="outf_st_titleonly">
+  <div class="inner">
+    <p class="outf_st_titleo">{{ section.settings.title  }}</p>
+  </div>
+</div>
+{% endif %}
+{% if section.settings.enable_custom_product %}
+  {% render 'product-reviews-io', product: section.settings.product %}
+{% else %}
+  {% render 'product-reviews-io' %}
+{% endif %}
+</div>
+
+{% schema %}
+  {
+    "name": "Product Reviews.io",
+    "settings": [
+        {
+          "type": "checkbox",
+          "id": "enable_title",
+          "label": "Enable Title",
+          "default": false
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "Everyone is Talking"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_custom_product",
+          "label": "Select a Product from Below",
+          "default": false
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select a Product"
+        },
+        {
+          "type": "color",
+          "id": "section_bacground_color",
+          "label": "Desktop Background Color"
+        },
+        {
+          "type": "color",
+          "id": "section_bacground_color_mobile",
+          "label": "Mobile Background Color"
+        },
+        {
+          "type": "text",
+          "id": "sectionclass",
+          "label": "Section Class",
+        }
+    ],
+    "presets": [
+        {
+          "name": "Product Reviews.io",
+          "blocks": []
+        }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

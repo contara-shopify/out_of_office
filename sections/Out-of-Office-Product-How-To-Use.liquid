@@ -1,0 +1,119 @@
+<style type="text/css">
+  {% if section.settings.section_bacground_color != blank %}
+    .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}{
+      background-color:{{section.settings.section_bacground_color}};
+    }
+  {% endif %}
+
+  .nightcap-thc-gummies-ps4{
+    padding-top: 119px;
+    padding-bottom: 61px;
+  }
+  .nightcap-thc-gummies-ps4 .inner{ margin-bottom: -60px; }
+
+  @media (max-width: 1024px){
+    .nightcap-thc-gummies-ps4 .mani_title {
+        padding-left: 205px;
+        padding-right: 205px;
+    }
+  }
+
+  @media (max-width: 768px){
+    .nightcap-thc-gummies-ps4 .inner{
+      margin-bottom: 0px;
+    }
+    .nightcap-thc-gummies-ps4 {
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    .nightcap-thc-gummies-ps4 .mani_title {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    {% if section.settings.section_bacground_color_mobile != blank %}
+      .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}{
+        background-color:{{section.settings.section_bacground_color_mobile}};
+      }
+    {% endif %}
+  }
+</style>
+
+<section class="outf_product3 uid{{ section.id }}  {{ section.settings.sectionclass }}">
+	<div class="inner">
+		<p class="subtitle">{{ section.settings.subtitle  }}</p>
+		<p class="mani_title">{{ section.settings.title  }}</p> 
+	</div>
+    <div class="outf_product3_gif desktop_only">
+      {% if section.settings.enable_gif == true %}
+        <img src="{{ section.settings.image | image_url: width: 2500  }}">
+      {% else %}
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+        <dotlottie-player src="https://lottie.host/eb15335b-3853-45b0-bbca-d26c1ec70c07/ybjWOxri4y.json" background="transparent" speed="1" style="width: 100%; height: 34vw;" loop autoplay></dotlottie-player>
+      {% endif %}
+    </div>
+    <div class="outf_product3_gif mobile_mobile">
+      {% if section.settings.enable_gif == true %}
+        <img src="{{ section.settings.image2 | image_url: width: 2500  }}">
+      {% else %}
+        <dotlottie-player src="https://lottie.host/bcbbb6c5-1201-4d64-bb7b-25d281a5b0e2/2JgvGciFCr.json" background="transparent" speed="1" style="width: 100vw; height: 133vw;" loop autoplay></dotlottie-player>
+      {% endif %}
+    </div>
+</section> 
+{% schema %}
+{
+    "name": "How To Use (Product)",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Sub-Title",
+          "default": "How To Use"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "Raise your <span>gummies,</span> not your glass."
+        },
+        {
+            "type":"checkbox",
+            "id":"enable_gif",
+            "label":"Enable Gif Upload"
+        },
+        {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Desktop Gif Image"
+        },
+        {
+            "type":"image_picker",
+            "id":"image2",
+            "label":"Mobile Gif Image"
+        },
+        {
+          "type": "color",
+          "id": "section_bacground_color",
+          "label": "Desktop Background Color"
+        },
+        {
+          "type": "color",
+          "id": "section_bacground_color_mobile",
+          "label": "Mobile Background Color"
+        },
+        {
+          "type": "text",
+          "id": "sectionclass",
+          "label": "Section Class",
+        }
+    ],
+    "blocks": [],
+    "presets": [
+        {
+          "name": "How To Use (Product)",
+          "blocks": []
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,61 @@
+
+<section class="outf_s9 {{ section.settings.sectionclass  }}">
+    {% if section.settings.show_top_svg %}   
+    <div class="top_svg">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920.209" height="298.417" viewBox="0 0 1920.209 298.417">
+        <g id="Scroll_Group_6" data-name="Scroll Group 6" transform="translate(-140 -923)" style="isolation: isolate">
+          <g id="Group_1537" data-name="Group 1537" transform="translate(140.277 -7298.497)">
+            <path id="Path_2386" data-name="Path 2386" d="M2424.541,874.685c-61.564-416.038-206.476-202.918-602.612-127.068C1408.467,826.788,1118.506,592.2,766.611,587.985c-353.96-16.3-438.659,42.082-738.986,135.687,4.242,1155.573,7.44-256.951,7.44,1125.671l2040.545-21.3S2486.105,1290.722,2424.541,874.685Z" transform="translate(-167.901 6713.232)" fill="#fef7f1"/>
+            <path id="Path_2387" data-name="Path 2387" d="M2091,1143.193s-91.106-155.024-378.566-155.274C1041.92,987.341,771.808,1310.872,0,1188.834v650.359H1951Z" transform="translate(-27 7256.72)" fill="#feecd5"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    {% endif %}
+    <div class="outf_s9_in">
+    	<div class="inner">
+    		<p class="h2">{{ section.settings.title  }}</p>
+    		<div class="outf_s9_form">
+              <div class="klaviyo-form-WgVip7"></div>
+    		</div>
+            <div class="outf_s9_form mobile_only">
+              <div class="klaviyo-form-S3Vqrd"></div>
+            </div>
+    	</div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+    "name": "Home - Out of Office Form",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "Our emails are (almost) as <span>good</span> as our gummies."
+        },
+        {
+            "type": "checkbox",
+            "id": "show_top_svg",
+            "default": true,
+            "label": "Show Top SVG (wave)"
+        },
+        {
+          "type": "text",
+          "id": "sectionclass",
+          "label": "Section Class"
+        }
+    ],
+    "blocks": [ ],
+    "presets": [
+        {
+          "name": "Home - Out of Office Form",
+          "blocks": []
+        }
+    ]
+}
+{% endschema %}

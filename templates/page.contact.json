@@ -1,0 +1,40 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact Us",
+        "image": "shopify://shop_images/contact_bg11.jpg",
+        "image2": "shopify://shop_images/contact_bg-m.jpg",
+        "imagealt": ""
+      }
+    },
+    "34300724-b3b7-456d-bd49-a606b42ddba4": {
+      "type": "contact-info",
+      "settings": {
+        "title1": "Shipping Questions?",
+        "body1": "For answers to shipping questions, please see our <a href=\"/pages/shipping-policy\">Shipping Policy</a> or reach out to support.",
+        "image": "shopify://shop_images/comment-question_8034077.svg",
+        "title2": "Need Help With An Order?",
+        "body2": "Please contact <a href=\"mailto:info@tryoutofoffice.com\">info@tryoutofoffice.com</a> or use the form above.",
+        "image2": "shopify://shop_images/call-center_7090669.svg",
+        "title3": "Return Questions?",
+        "body3": "For answers to return questions, please see our <a href=\"/pages/return-policy\">Return Policy</a> or reach out to support.",
+        "image3": "shopify://shop_images/comment-question_8034077_1920Xv2.svg"
+      }
+    }
+  },
+  "order": [
+    "form",
+    "34300724-b3b7-456d-bd49-a606b42ddba4"
+  ]
+}

@@ -1,0 +1,114 @@
+.blog-articles {
+  display: grid;
+  grid-gap: 1rem;
+  column-gap: var(--grid-mobile-horizontal-spacing);
+  row-gap: var(--grid-mobile-vertical-spacing);
+}
+
+.blog-articles .card-wrapper {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .blog-articles {
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--grid-desktop-horizontal-spacing);
+    row-gap: var(--grid-desktop-vertical-spacing);
+  }
+
+  .blog-articles--collage > *:nth-child(3n + 1),
+  .blog-articles--collage > *:nth-child(3n + 2):last-child {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .blog-articles--collage > *:nth-child(3n + 1) .card,
+  .blog-articles--collage > *:nth-child(3n + 2):last-child .card {
+    text-align: center;
+  }
+
+  .blog-articles--collage > *:nth-child(3n + 1) .article-card__image--small .ratio::before,
+  .blog-articles--collage > *:nth-child(3n + 2):last-child .article-card__image--small .ratio::before {
+    padding-bottom: 22rem;
+  }
+
+  .blog-articles--collage > *:nth-child(3n + 1) .article-card__image--medium .ratio::before,
+  .blog-articles--collage > *:nth-child(3n + 2):last-child .article-card__image--medium .ratio::before {
+    padding-bottom: 44rem;
+  }
+
+  .blog-articles--collage > *:nth-child(3n + 1) .article-card__image--large .ratio::before,
+  .blog-articles--collage > *:nth-child(3n + 2):last-child .article-card__image--large .ratio::before {
+    padding-bottom: 66rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .blog-articles--collage > *:nth-child(3n + 1) .article-card__image--small .ratio .ratio::before,
+  .blog-articles--collage > *:nth-child(3n + 2):last-child .article-card__image--small .ratio .ratio::before {
+    padding-bottom: 27.5rem;
+  }
+
+  .blog-articles--collage > *:nth-child(3n + 1) .article-card__image--medium .ratio::before,
+  .blog-articles--collage > *:nth-child(3n + 2):last-child .article-card__image--medium .ratio::before {
+    padding-bottom: 55rem;
+  }
+
+  .blog-articles--collage > *:nth-child(3n + 1) .article-card__image--large .ratio::before,
+  .blog-articles--collage > *:nth-child(3n + 2):last-child .article-card__image--large .ratio::before {
+    padding-bottom: 82.5rem;
+  }
+}
+
+
+
+
+
+
+
+.main_blog_out0foffice{}
+.out0foffice_blog_feed{}
+
+.out0foffice_blog_feedin{}
+.out0foffice_blog_feedin .inner{}
+.out0foffice_blog_feedin h1.title--primary{}
+
+.out0foffice_blog_feedin .svg_bottom{}
+.out0foffice_blog_feedin .svg_bottom svg{}
+.out0foffice_blog_feedin .svg_bottom svg path{}
+
+.out0foffice_blog_feed_lists{}
+.out0foffice_blog_feed_lists .blog-articles{}
+.out0foffice_blog_feed_lists .blog-articles .article{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__inner{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__inner .card__media{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__inner .card__media .media{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__inner .card__media .media img{}
+
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__content{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__content .card__information{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__content .card__information .card__heading{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__content .card__information .card__heading a{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__content .card__information .article-card__info{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__content .card__information .article-card__excerpt{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__content .card__information .article-card__footer{}
+
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__inner .card__content{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__inner .card__content .card__information{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__inner .card__content .card__information .card__heading{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__inner .card__content .card__information .card__heading a{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__inner .card__content .card__information .article-card__info{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__inner .card__content .card__information .article-card__excerpt{}
+.out0foffice_blog_feed_lists .blog-articles .article .card-wrapper .article-card .card__inner .card__content .card__information .article-card__footer{}
+
+.out0foffice_blog_feed_pagination{}
+.out0foffice_blog_feed_pagination .pagination-wrapper{}
+.out0foffice_blog_feed_pagination .pagination-wrapper .pagination{}
+.out0foffice_blog_feed_pagination .pagination-wrapper .pagination ul.pagination__list{}
+.out0foffice_blog_feed_pagination .pagination-wrapper .pagination ul.pagination__list li{}
+.out0foffice_blog_feed_pagination .pagination-wrapper .pagination ul.pagination__list li a{}
+.out0foffice_blog_feed_pagination .pagination-wrapper .pagination ul.pagination__list li a.pagination__item--current{}
+.out0foffice_blog_feed_pagination .pagination-wrapper .pagination ul.pagination__list li a.pagination__item-arrow{}
+.out0foffice_blog_feed_pagination .pagination-wrapper .pagination ul.pagination__list li a.pagination__item-arrow svg{}

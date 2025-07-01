@@ -1,0 +1,104 @@
+<section class="contact_info_s2">
+	<div class="inner">
+		<div class="col col1">
+			<div class="icon">
+				<img src="{{ section.settings.image | img_url:'1920X' }}" alt="{{ section.settings.title1  }}">
+			</div>
+			<p class="title">{{ section.settings.title1  }}</p>
+			<article>{{ section.settings.body1  }}</article>
+		</div>
+		<div class="col col2">
+			<div class="icon">
+				<img src="{{ section.settings.image2 | img_url:'1920X' }}" alt="{{ section.settings.title2  }}">
+			</div>
+			<p class="title">{{ section.settings.title2  }}</p>
+			<article>{{ section.settings.body2  }}</article>
+		</div>
+		<div class="col col3">
+			<div class="icon">
+				<img src="{{ section.settings.image3 | img_url:'1920X' }}" alt="{{ section.settings.title3  }}">
+			</div>
+            <p class="title">{{ section.settings.title3  }}</p>
+			<article>{{ section.settings.body3  }}</article>
+		</div>
+	</div>
+</section>
+{% schema %}
+{
+    "name": "Contact Info",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "header",
+          "content": "Common Questions "
+        },
+        {
+          "type": "textarea",
+          "id": "title1",
+          "label": "Title",
+          "default": "Common Questions"
+        },
+        {
+          "type": "textarea",
+          "id": "body1",
+          "label": "Content",
+          "default": "For answers to common questions, please see our <a href='#'>FAQ.</a>"
+        },
+        {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Icon"
+        },
+        {
+          "type": "header",
+          "content": "Help With An Order"
+        },
+        {
+          "type": "textarea",
+          "id": "title2",
+          "label": "Title",
+          "default": "Need Help With An Order? <br>General Inquiry?"
+        },
+        {
+          "type": "textarea",
+          "id": "body2",
+          "label": "Content",
+          "default": "Please contact <a href='mailto:info@getsoul.com'>info@getsoul.com</a> or use the form."
+        },
+        {
+            "type":"image_picker",
+            "id":"image2",
+            "label":"Icon"
+        },
+        {
+          "type": "header",
+          "content": "Address"
+        },
+        {
+          "type": "textarea",
+          "id": "title3",
+          "label": "Title",
+          "default": "Return Questions?"
+        },
+        {
+          "type": "textarea",
+          "id": "body3",
+          "label": "Content",
+          "default": "For answers to return questions, please see our Return Policy or reach out to support."
+        },
+        {
+            "type":"image_picker",
+            "id":"image3",
+            "label":"Icon"
+        }
+    ],
+    "blocks": [],
+    "presets": [
+        {
+          "name": "Contact Info",
+          "blocks": []
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,51 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "604eb6fb5b578cc4752c970720b281e9837ffd8aca713303dd452e264c0937d72756301b9e257103123ac667d61da7b3940d371219ed040db10931206d61b588": {
+      "type": "apps",
+      "blocks": {
+        "40303ceb-d739-42e8-8895-6644a30b9d39": {
+          "type": "shopify://apps/influence-io-loyalty-rewards/blocks/fullpage-widget/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
+          "settings": {
+            "show_header": true,
+            "show_points_activity": true,
+            "show_rewards": true,
+            "show_earn_rules": true,
+            "show_redeem_rules": true,
+            "show_loyalty_tiers": true,
+            "show_referrals": true,
+            "show_affiliate": true
+          }
+        }
+      },
+      "block_order": [
+        "40303ceb-d739-42e8-8895-6644a30b9d39"
+      ],
+      "custom_css": [],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "604eb6fb5b578cc4752c970720b281e9837ffd8aca713303dd452e264c0937d72756301b9e257103123ac667d61da7b3940d371219ed040db10931206d61b588"
+  ]
+}

@@ -1,0 +1,60 @@
+<style type="text/css">
+
+</style>
+<section class="outf_s3 uid{{ section.id }}  {{ section.settings.sectionclass }}">
+	<div class="inner">
+		<div class="title">
+			<h2 class="h2">{{ section.settings.title  }}</h2>
+		</div>
+		<article>{{ section.settings.text  }}</article>
+		<div class="button_link">
+			<a href="{{ section.settings.buttonl  }}">{{ section.settings.buttont  }}</a>
+		</div>
+	</div>
+</section>
+
+{% schema %}
+{
+    "name": "Home - Take The Edge",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "Take the edge off with <span>100% legal</span> cannabis."
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Yes, you read that right. Out of Office is legal, hemp derived Delta 9 THC, delivered straight to your door.</p>",
+          "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "buttont",
+          "label": "Button Text",
+          "default": "Learn more about Delta 9 THC"
+        },
+        {
+          "type": "textarea",
+          "id": "buttonl",
+          "label": "Button Link",
+          "default": "#"
+        },
+        {
+            "type": "text",
+            "id": "section_class",
+            "label": "Section Class"
+        }
+    ],
+    "blocks": [],
+    "presets": [
+        {
+          "name": "Home - Take The Edge",
+          "blocks": []
+        }
+    ]
+}
+{% endschema %}

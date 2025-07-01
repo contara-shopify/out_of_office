@@ -1,0 +1,20 @@
+{% assign variant = product.selected_or_first_available_variant %}
+{% capture variant_subtitle %}
+  {% if product.variants.size > 1 %}
+    {{variant.metafields.info.subtitle}}
+  {% endif %}
+{% endcapture %}
+
+{% assign subtitle = "" %}
+
+{% if product.metafields.custom.product_subtitle != blank %}
+    {% assign subtitle = product.metafields.custom.product_subtitle %}
+{% endif %}
+
+{% if variant_subtitle != blank %}
+  {% assign subtitle = variant_subtitle %}
+{% endif %}
+
+{% if subtitle != blank %}
+    <div class="sub-title"> {{ subtitle }} </div>
+{% endif %}

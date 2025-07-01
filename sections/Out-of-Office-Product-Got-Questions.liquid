@@ -1,0 +1,111 @@
+<style type="text/css">
+  {% if section.settings.section_bacground_color != blank %}
+    .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}{
+      background-color:{{section.settings.section_bacground_color}};
+    }
+  {% endif %}
+
+  .nightcap-thc-gummies-ps6 {
+      padding-top: 123px;
+      padding-bottom: 115px;
+  }
+  @media (max-width: 768px){
+    {% if section.settings.section_bacground_color_mobile != blank %}
+      .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}{
+        background-color:{{section.settings.section_bacground_color_mobile}};
+      }
+    {% endif %}
+    .nightcap-thc-gummies-ps6 .inner .h5{ display: none; }
+    .nightcap-thc-gummies-ps6 {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+  }
+</style>
+
+<section class="outf_s8 outf_s8_product_questions uid{{ section.id }}  {{ section.settings.sectionclass }}">
+    <div class="outf_s8_in">
+  	<div class="inner">
+  		<p class="h5">{{ section.settings.subtitle  }}</p>
+  		<h2 class="h2">{{ section.settings.title  }}</h2>
+  		<div class="accordion_body">
+  			{% for block in section.blocks %}
+  			<div class="col">
+    				<div class="accordion_hand">
+    					<span class="pluse"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 44.5 45.8" style="enable-background:new 0 0 44.5 45.8;" xml:space="preserve"> <style type="text/css"> .st0{fill:none;stroke:#023940;stroke-width:2.5;stroke-miterlimit:10;} .st1{enable-background:new    ;} .st2{fill:#023940;} </style> <g id="Group_1475" transform="translate(1.758 1.758)"> <ellipse id="Ellipse_51" class="st0" cx="20.5" cy="20.5" rx="14.6" ry="14.6"/> <g class="st1"> <path class="st2" d="M28.2,21.8h-6.7v6.8h-1.9v-6.8h-6.7V20h6.7v-6.8h1.9V20h6.7V21.8z"/> </g> </g> </svg></span>
+    					<span class="minse"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 44.5 45.8" style="enable-background:new 0 0 44.5 45.8;" xml:space="preserve"> <style type="text/css"> .st0{fill:none;stroke:#023940;stroke-width:2.5;stroke-miterlimit:10;} .st1{enable-background:new    ;} .st2{fill:#023940;} </style> <g id="Group_1474" transform="translate(1.758 1.758)"> <ellipse id="Ellipse_51" class="st0" cx="20.5" cy="20.5" rx="14.6" ry="14.6"/> <g class="st1"> <path class="st2" d="M26.4,20v1.8H14.7V20H26.4z"/> </g> </g> </svg></span>
+    					<h2 class="h22">{{ block.settings.title }}</h2>
+    				</div>
+    				<div class="accordion_content">
+    					<article>{{ block.settings.text }}</article>
+    				</div>
+  			</div>
+  			{% endfor %}
+  		</div>
+  	</div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+    "name": "Got Questions (Product)",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Sub-Title",
+          "default": "You’ve Got Questions"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "We’ve Got Answers."
+        },
+        {
+          "type": "color",
+          "id": "section_bacground_color",
+          "label": "Desktop Background Color"
+        },
+        {
+          "type": "color",
+          "id": "section_bacground_color_mobile",
+          "label": "Mobile Background Color"
+        },
+        {
+          "type": "text",
+          "id": "sectionclass",
+          "label": "Section Class",
+        }
+    ],
+    "blocks": [
+        {
+        "type":"subscribesave",
+        "name": "Subscribe & Save",
+        "settings": [
+            {
+                "type":"textarea",
+                "label": "Title",
+                "id": "title",
+                "default": "Where Do You Ship?"
+            },
+            {
+              "type": "richtext",
+              "id": "text",
+              "default": "<p>Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout.</p>",
+              "label": "Content"
+            }
+        ]
+        }
+    ],
+    "presets": [
+        {
+          "name": "Got Questions (Product)",
+          "blocks": []
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,426 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "b3e26656-d50c-49f9-b109-722c8dc1f6cf": {
+      "type": "Out-of-Office-Hero",
+      "settings": {
+        "title": "A match made in euphoric heaven.",
+        "text": "<p>Want a microdose that won't send you to the moon? Really need to replace that after-work cocktail? Unwind like you’re OOO! Get an automatic $10 off by clicking the link below!</p>",
+        "buttont": "GET $10 OFF",
+        "buttonl": "https://tryoutofoffice.com/discount/HELLOOO?redirect=/products/out-of-office-gummies",
+        "image": "shopify://shop_images/Scroll_Group_1_2880X_f68e0670-f939-4f2c-b0a6-2a3ed94a7972.jpg",
+        "image2": "shopify://shop_images/Scroll_Group_5.jpg"
+      }
+    },
+    "edec44c0-3af0-466d-a756-edd190c57fc0": {
+      "type": "Out-of-Office-Take-The-Edge",
+      "settings": {
+        "title": "Take the edge off with <span>100% legal</span> cannabis.",
+        "text": "<p>Yes, you read that right. Out of Office is legal, hemp derived Delta 9 THC, delivered straight to your door.</p>",
+        "buttont": "Learn more about Delta 9 THC",
+        "buttonl": "/blogs/thc-education"
+      }
+    },
+    "6ffdd854-1713-4c80-bc48-d4f5af11b0b4": {
+      "type": "Out-of-Office-What-To-Expect",
+      "blocks": {
+        "ae169fce-21ac-42df-9cf4-4ac0551bcd1b": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "A Microdosed Experience",
+            "text": "<p>It’s a small amount, so you can get buzzed, not blitzed.</p>"
+          }
+        },
+        "cf7f1936-c306-43bb-83b4-13b49097d4a1": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Immediate Enjoyment",
+            "text": "<p>These delightful little treats are fast acting, without being overwhelming.</p>"
+          }
+        },
+        "fdd27ba7-35b4-41dd-b84e-2d5a396ef1d9": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Replace Your Glass Of Wine",
+            "text": "<p>You get a mild buzz, without having to drink. Gummies &gt; hangovers!</p>"
+          }
+        },
+        "8d310fca-8b79-4b21-a452-14d492814c07": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Enhanced Focus And Creativity",
+            "text": "<p>Whether you've got a full inbox to clear or you're creating a symphony, Out of Office can help you get there.</p>"
+          }
+        },
+        "dcb6fdb0-91e0-4b6d-8463-90fca9e42c04": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Melatonin Substitute",
+            "text": "<p>We know melatonin isn't for everyone. With Out of Office, your sleep can still be on point!</p>"
+          }
+        },
+        "42411f9b-6c53-444f-b9b8-cbe31578cd51": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "The Most Delicious",
+            "text": "<p>We know how to make everything taste great. Did you expect anything less?</p>"
+          }
+        }
+      },
+      "block_order": [
+        "ae169fce-21ac-42df-9cf4-4ac0551bcd1b",
+        "cf7f1936-c306-43bb-83b4-13b49097d4a1",
+        "fdd27ba7-35b4-41dd-b84e-2d5a396ef1d9",
+        "8d310fca-8b79-4b21-a452-14d492814c07",
+        "dcb6fdb0-91e0-4b6d-8463-90fca9e42c04",
+        "42411f9b-6c53-444f-b9b8-cbe31578cd51"
+      ],
+      "settings": {
+        "subtitle": "What To Expect",
+        "title": "Unwind like you’re on Vacay.",
+        "image": "shopify://shop_images/compliant-img-2.jpg"
+      }
+    },
+    "9233de62-80d6-4a5b-964b-5080da23d311": {
+      "type": "Out-of-Office-Us-Vs-Them",
+      "blocks": {
+        "09cd4106-d246-4f8d-bc90-8210b637f79e": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "",
+            "ustitle": "OOO <br>GUMMIES",
+            "image": "shopify://shop_images/Path_2371.svg",
+            "themetitle": "THE OTHER <br>GUYS",
+            "image2": "shopify://shop_images/Group_1480.svg"
+          }
+        },
+        "5feede31-8903-41b0-9c31-dcf5eeef8ccb": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "A Microdose You Can Feel",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/close.svg"
+          }
+        },
+        "661ebcd7-cdcc-48d2-b1be-d7a860c0b492": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Won’t Send You Into Orbit",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/close.svg"
+          }
+        },
+        "6c784d30-c2cf-466b-88d3-bdf11dd4b07c": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Delicious (Duh!)",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/close.svg"
+          }
+        },
+        "0e32430e-5e9f-4649-84f8-e487d9715966": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "No Fake Stuff",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/close.svg"
+          }
+        },
+        "947bdf0e-a789-419e-aeb0-5478ecf354ca": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Organically Grown Hemp",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/close.svg"
+          }
+        },
+        "c93094f7-4495-45c3-89b0-720b95b2b46e": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Low Sugar (2G)",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/close.svg"
+          }
+        },
+        "56b5ab13-38a4-4cba-92fd-7e458105c67a": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Vegan & Gluten Free",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/close.svg"
+          }
+        }
+      },
+      "block_order": [
+        "09cd4106-d246-4f8d-bc90-8210b637f79e",
+        "5feede31-8903-41b0-9c31-dcf5eeef8ccb",
+        "661ebcd7-cdcc-48d2-b1be-d7a860c0b492",
+        "6c784d30-c2cf-466b-88d3-bdf11dd4b07c",
+        "0e32430e-5e9f-4649-84f8-e487d9715966",
+        "947bdf0e-a789-419e-aeb0-5478ecf354ca",
+        "c93094f7-4495-45c3-89b0-720b95b2b46e",
+        "56b5ab13-38a4-4cba-92fd-7e458105c67a"
+      ],
+      "settings": {
+        "subtitle": "Us Vs. Them",
+        "title": "Now every day can feel like a <span>Vacay.</span>",
+        "image": "shopify://shop_images/s4-2.png",
+        "image2": "shopify://shop_images/DSC06819.jpg"
+      }
+    },
+    "5ce7dd2c-453e-4983-aa49-e35209fbd499": {
+      "type": "Out-of-Office-Testimonials",
+      "blocks": {
+        "fd00cfb8-3e5f-419a-b3d8-503fb7d1aca5": {
+          "type": "testimonials",
+          "settings": {
+            "title": "Just What I Needed",
+            "text": "<p>These help me relax after a long day and help me get some good *** sleep lol you just got a loyal customer!! Great product guys.</p>",
+            "tesname": "- C. Andretti",
+            "image2": "shopify://shop_images/5_star_gold.svg",
+            "imagealt2": ""
+          }
+        },
+        "70f4ce1a-cc36-4b5a-952b-84bd5500e8c0": {
+          "type": "testimonials",
+          "settings": {
+            "title": "The Perfect Nightcap Replacement",
+            "text": "<p>These gummies are great after a long day, when I need to unwind but still get a good night's sleep. I used to have a glass of wine a few times a week and that is goneee and replaced by these amazing gummies.</p>",
+            "tesname": "-  Cameron K.",
+            "image2": "shopify://shop_images/5_star_gold.svg",
+            "imagealt2": ""
+          }
+        },
+        "5532949d-9ab8-4898-a414-ab0f6f294446": {
+          "type": "testimonials",
+          "settings": {
+            "title": "Just The Perfect Amount Of ‘Chill’.",
+            "text": "<p>These Gummies are the perfect stress solution for me. They help me relax and calm down at the end of a stressful day, yet I’m still alert enough to enjoy my evening. And they taste amazing!</p>",
+            "tesname": "- Coryn L.",
+            "image2": "shopify://shop_images/5_star_gold.svg",
+            "imagealt2": ""
+          }
+        },
+        "f10fd6a4-174c-42c9-ba3a-1b7caccf84a4": {
+          "type": "testimonials",
+          "settings": {
+            "title": "Amazing!!!",
+            "text": "<p>These are so good, taste and quality. It literally is like a breathe of fresh air taking one after work. I am so much more calm. My limit is 1 per night lol best sleep ever too!!</p>",
+            "tesname": "- Melissa H.",
+            "image2": "shopify://shop_images/5_star_gold.svg",
+            "imagealt2": ""
+          }
+        },
+        "4495a803-0d9d-414f-8af5-7590cb8d6f2a": {
+          "type": "testimonials",
+          "settings": {
+            "title": "Best Sleep Yet",
+            "text": "<p>I’m almost done with my first container of gummies. I’ve noticed deeper sleep and less anxiousness. It’s definitely working well for me.</p>",
+            "tesname": "",
+            "image2": "shopify://shop_images/5_star_gold.svg",
+            "imagealt2": ""
+          }
+        }
+      },
+      "block_order": [
+        "fd00cfb8-3e5f-419a-b3d8-503fb7d1aca5",
+        "70f4ce1a-cc36-4b5a-952b-84bd5500e8c0",
+        "5532949d-9ab8-4898-a414-ab0f6f294446",
+        "f10fd6a4-174c-42c9-ba3a-1b7caccf84a4",
+        "4495a803-0d9d-414f-8af5-7590cb8d6f2a"
+      ],
+      "settings": {
+        "subtitle": "Testimonials",
+        "title": "What they Say",
+        "image": "shopify://shop_images/Radio_Cutout_1.png",
+        "imagealt": ""
+      }
+    },
+    "dadf9bf4-02e2-4404-8436-a2dce24e749e": {
+      "type": "Out-of-Office-Subscribe-Save",
+      "blocks": {
+        "3781f8c3-b9d5-4b8c-8608-3df18a541464": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Save 15% On Every Subscription Order"
+          }
+        },
+        "c5758983-f8a2-4b48-ab6a-c8aacfc69ef3": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Swap, Pause, Cancel Anytime"
+          }
+        },
+        "1ffb9bf1-5a14-4e75-abf5-7a0ebc948d52": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Free Shipping On Subscription Orders"
+          }
+        },
+        "077201ba-4b8d-438d-be6d-d6c97efa7c4e": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Never Run Out Of Your Gummies"
+          }
+        }
+      },
+      "block_order": [
+        "3781f8c3-b9d5-4b8c-8608-3df18a541464",
+        "c5758983-f8a2-4b48-ab6a-c8aacfc69ef3",
+        "1ffb9bf1-5a14-4e75-abf5-7a0ebc948d52",
+        "077201ba-4b8d-438d-be6d-d6c97efa7c4e"
+      ],
+      "settings": {
+        "subtitle": "Subscribe & Save",
+        "title": "Legal THC Delivered to Your Door, <br><span>Hassle Free</span>",
+        "buttont": "Subscribe & Save",
+        "buttonl": "/discount/HELLOOO?redirect=/products/out-of-office-gummies",
+        "image": "shopify://shop_images/compliant-img-1.jpg",
+        "imagealt": ""
+      }
+    },
+    "34722638-ed4e-4e86-b570-2b0e79ea8e03": {
+      "type": "Out-of-Office-Turn-Faq",
+      "blocks": {
+        "aba33b5f-3b4f-49d5-bfd3-b6a0897afaaf": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "What is THC?",
+            "text": "<p>Discover THC – your endocannabinoid system's ultimate party-starter! Like the life of a party, it brings a gentle buzz and euphoria to the scene. Each dose offers a creative boost or a chance to unwind. Say farewell to the usual routine and embrace the enchantment of this magic compound. Whether you want to switch up your relaxation method or enhance social gatherings, THC is here for you. It's a vacation encapsulated in every gummy, where relaxation and good vibes merge.</p>"
+          }
+        },
+        "21bb47d1-e64c-4f1f-97d4-c71e56d97017": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "What is microdosing THC?",
+            "text": "<p>Microdosing involves consuming minuscule, non-intoxicating amounts of THC, the magic compound found in cannabis. The goal? To harness the therapeutic benefits without the rollercoaster ride of getting high. It's like sipping a cup of focus and relaxation in perfect harmony. With just a whisper of THC, individuals are exploring enhanced mood, reduced anxiety, and improved creativity, all while keeping a steady hand on the steering wheel of their day. It's about embracing the subtleties, finding that sweet spot, and letting THC complement your life like a well-choreographed partner.</p>"
+          }
+        },
+        "db2da474-b432-42ca-849d-03d041925190": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Who uses THC?",
+            "text": "<p>In the hustle and bustle of the modern world, THC is emerging as an unexpected ally for everyday professionals. No longer confined to stereotypical scenes, it's finding its way into the routines of people who value focus, balance, and clarity. Picture the go-getter diving into their tasks with renewed energy, or the creative mind exploring uncharted territories of imagination. THC, when microdosed skillfully, becomes a quiet collaborator, enhancing productivity without the buzz. It's not about escaping reality, but rather about optimizing it – infusing the ordinary with a touch of extraordinary. As professionals seek a harmonious blend of work and well-being, THC is quietly stepping into the limelight, reminding us that it's not just about the destination, but the journey itself.</p>"
+          }
+        },
+        "d60e3faa-6d09-4e48-a6a6-4d439bb830f3": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Is hemp-derived THC legal in my state?",
+            "text": "<p>Let's talk about Hemp-derived THC and its legal side. THC is a compound primarily found in the cannabis plant. It's the psychoactive component responsible for the \"high\" sensation commonly associated with marijuana use. However, when derived from hemp, a specific variety of the cannabis plant, THC takes on a different legal status. Thanks to the 2018 Farm Bill, Hemp-derived THC is considered legal as long as it contains no more than 0.3% by weight. This bill sets the rules for what's allowed when it comes to THC content in certain products. So, if you're staying within that 0.3% limit, you're on the right side of the legal fence.</p>"
+          }
+        },
+        "a3f4dffe-2ac7-4ee6-9be0-b3c43f2b87a2": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "How do I find the right dose of THC for me?",
+            "text": "<p>When it comes to finding your perfect THC dose, it's all about a personalized journey. Start off on the chill side with a low dose – this gives you a chance to gauge your body's vibes and dodge any overwhelming effects, especially if you're new to the THC scene. Give it some time (around 1 to 2 hours) to work its magic, and why not keep a little journal of your adventure? Note the time it takes for the effects to kick in, how strong they hit, and any unexpected reactions.</p>"
+          }
+        },
+        "d478e58c-3c04-4419-8f53-716e3ad3b064": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "How long does it take to feel the effects of THC?",
+            "text": "<p>Timing holds the key – THC dances to its own tune, affected by metabolism, dose, sensitivity, and the recipe. Imagine your body and the compound moving in sync to craft your special THC journey. However, remember, THC isn't in a hurry. It usually takes 30 minutes to 2 hours to make an appearance. It's like a leisurely waltz with your digestive system, transforming into a stronger THC version as it passes through your liver.</p>"
+          }
+        },
+        "89c3607a-d7d9-483e-ba80-676ce44899f2": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Will I pass a drug test if I take hemp-derived THC?",
+            "text": "<p>Just a quick note: enjoying Hemp-derived THC might show up on a drug test. These tests can detect specific substances and their presence in your system. How long they're detectable depends on factors like metabolism, frequency of use, and test sensitivity.</p>"
+          }
+        },
+        "3b38d5e4-56f9-4968-adcf-68c572c1d903": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "What else should I consider when taking THC?",
+            "text": "<p>When considering THC, there's lots to remember. Start by knowing your purpose – whether for fun, relief, or something else. Begin with a small dose to gauge your body's response. Choose a method that suits you, understanding onset and duration of effects. Ensure a comfortable and safe environment. Consider your health, medications, and potential interactions. Be prepared for side effects and avoid tasks requiring focus. Approach THC carefully if you have a history of mental health issues. Stay balanced and responsible in sourcing and adhering to regulations. For medical use, consult a doctor; experts are here for legal and health queries.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "aba33b5f-3b4f-49d5-bfd3-b6a0897afaaf",
+        "21bb47d1-e64c-4f1f-97d4-c71e56d97017",
+        "db2da474-b432-42ca-849d-03d041925190",
+        "d60e3faa-6d09-4e48-a6a6-4d439bb830f3",
+        "a3f4dffe-2ac7-4ee6-9be0-b3c43f2b87a2",
+        "d478e58c-3c04-4419-8f53-716e3ad3b064",
+        "89c3607a-d7d9-483e-ba80-676ce44899f2",
+        "3b38d5e4-56f9-4968-adcf-68c572c1d903"
+      ],
+      "settings": {
+        "subtitle": "You’ve Got Questions",
+        "title": "We’ve Got Answers."
+      }
+    },
+    "d8508561-b8fb-423e-8f2d-068dd5a3447b": {
+      "type": "Out-of-Office-Form",
+      "settings": {
+        "title": "Our emails are (almost) as <span>good</span> as our gummies."
+      }
+    }
+  },
+  "order": [
+    "featured_collection",
+    "b3e26656-d50c-49f9-b109-722c8dc1f6cf",
+    "edec44c0-3af0-466d-a756-edd190c57fc0",
+    "6ffdd854-1713-4c80-bc48-d4f5af11b0b4",
+    "9233de62-80d6-4a5b-964b-5080da23d311",
+    "5ce7dd2c-453e-4983-aa49-e35209fbd499",
+    "dadf9bf4-02e2-4404-8436-a2dce24e749e",
+    "34722638-ed4e-4e86-b570-2b0e79ea8e03",
+    "d8508561-b8fb-423e-8f2d-068dd5a3447b"
+  ]
+}

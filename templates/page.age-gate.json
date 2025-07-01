@@ -1,0 +1,37 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "age_gate_qWJFKY": {
+      "type": "age-gate-section",
+      "settings": {
+        "logo": "shopify://shop_images/logo.svg",
+        "heading": "I confirm I'm over 21 years of age.",
+        "paragraph": "<p>Before we can let you in, we just need you to confirm your age. Don't worry, you don't need a medical card or anything. Just click the button below to go Out of Office!</p>",
+        "yes_button": "Enter",
+        "action_link": "https://www.tryoutofoffice.com/discount/FALL?redirect=/products/out-of-office-gummies",
+        "show_review_icon": true,
+        "review_text": "10,000+ 5 Star Reviews",
+        "cookie_handle": "user_age",
+        "background_color": "#fef7f1",
+        "box_bg_color": "#ffedb8",
+        "heading_color": "#08ace8",
+        "paragraph_color": "#4e4a4a",
+        "button_color": "#423f35",
+        "button_text_color": "#ffffff",
+        "review_icon_color": "#08ace8",
+        "review_text_color": "#08ace8"
+      }
+    }
+  },
+  "order": [
+    "age_gate_qWJFKY"
+  ]
+}

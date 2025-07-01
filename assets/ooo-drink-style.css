@@ -1,0 +1,394 @@
+.MainProduct_single_page .product .product__info-wrapper .product__info-container .product__title h1,
+.MainProduct_single_page .ruk_rating_snippet .ruk-rating-snippet-count,
+.MainProduct_single_page .product .product__info-wrapper .product__info-container .price .price__container .price__regular,
+.product__ddiln_waper .col .accordion_hand,
+.product__ddiln_waper .col .accordion_content{
+    color: #023940 !important;
+}
+.MainProduct_single_page .ruk_rating_snippet i{
+    color: gold !important;
+}
+
+.product__ddiln_waper .col {
+    border-top: 1px solid #023940;
+}
+.product__ddiln_waper .col:last-child {
+    border-bottom: 1px solid #023940;
+}
+.MainProduct_single_page .product .product-form .form .product-form__buttons .button{
+    color: #fff !important;
+    background: #023940 !important;
+    text-align: center;
+    justify-content: center;
+}
+.MainProduct_single_page .product .product-form .form .product-form__buttons .button:hover {
+    color: #fff !important;
+    background: #023940 !important;
+    opacity: .9;
+}
+
+
+.ooo-drink-s03 .problem-solution-section__slide{
+    box-sizing: border-box;
+}
+
+.ooo-drink-s03 .problem-solution-section__title,
+.ooo-drink-s03 .problem-solution-section__slide-title,
+.ooo-drink-s03 .problem-solution-section__slide-description,
+.ooo-drink-s04 .pvd__subtitle,
+.ooo-drink-s04 .pvd__title,
+.ooo-drink-s04 article{ color: #023940 !important; }
+.ooo-drink-s04 article li:first-child {
+    border-top: 0 !important;
+}
+.ooo-drink-s04 article li {
+    border-top: solid 1px #023940 !important;
+}
+
+.ooo-drink-s04 {
+    position: relative;
+    padding-bottom: 59px;
+}
+.ooo-drink-s04 .pvd__inner {
+    position: unset !important;
+}
+.ooo-drink-s04 .pro_vacay_differences_img {
+    left: unset;
+    right: 0;
+    top: -185px;
+    width: 392px;
+    z-index: 1;
+}
+.ooo-drink-s04 .pvd_animation_img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 835px;
+    overflow: hidden;
+}
+.ooo-drink-s04 .pvd_animation_img img {
+    margin-left: -185px;
+    margin-bottom: -56px;
+    width: 100%;
+}
+.ooo-drink-s04 .pvd__subtitle { }
+.ooo-drink-s04 .pvd__title { }
+.ooo-drink-s04 .pvd__item {
+    width: 28.33%;
+    background-color: #FFFCE8;
+    margin: 0 2%;
+}
+.ooo-drink-s04 .pvd__item_head {
+    color: #fffce8 !important;
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 6px;
+}
+.ooo-drink-s04 .pvd__item_subhead {
+    padding-bottom: 24px;
+    color: #fffce8 !important;
+    letter-spacing: 0px;
+    margin-top: -4px;
+    margin-left: -40px;
+    margin-right: -40px;
+}
+.ooo-drink-s04 .pvd__item img {
+    max-width: 189px;
+    margin-bottom: 17px;
+    margin-top: 23px;
+}
+.ooo-drink-s04 article { }
+.ooo-drink-s04 article strong{ }
+.ooo-drink-s04 article li {
+    padding-bottom: 14px;
+}
+
+
+
+
+.ooo-drink-s07{
+    padding-top: 119px;
+    padding-bottom: 61px;
+}
+.ooo-drink-s07 .subtitle,
+.ooo-drink-s07 .mani_title{
+    color: #023940 !important;
+}
+
+.ooo-drink-s08 .outf_s5_usvsthem_in {
+    padding-top: 80px;
+    padding-bottom: 46px;
+}
+.ooo-drink-s08 .outf_s5_subtitle,
+.ooo-drink-s08 .outf_s5_title,
+.ooo-drink-s08 .outf_s5_uvt_in .col .col1 p{
+    color: #023940 !important;
+}
+.ooo-drink-s08 .outf_s5_uvt_in .col .col2 p{
+    color: #EBEFFF !important;
+}
+
+.ooo-drink-s08 .outf_s5_uvt_in .col .col3,
+.ooo-drink-s08 .outf_s5_uvt_in .col .col1{
+    border-bottom: 1px solid #023940;
+}
+
+.ooo-drink-s08 .outf_s5_uvt_in .col:last-child .col3,
+.ooo-drink-s08 .outf_s5_uvt_in .col:last-child .col1{
+    border-bottom: 0px solid #023940;
+}
+
+.ooo-drink-s09 {
+    padding-top: 126px;
+    position: relative;
+}
+.ooo-drink-s09:after {
+    right: 0;
+    left: unset !important;
+    top: -319px !important;
+    height: 618px !important;
+    width: 643px !important;
+    background-image: url(/cdn/shop/files/umbrella.png?v=1738847914) !important;
+    background-position: right top;
+    background-size: cover;
+    position: absolute;
+      content: "";
+}
+.ooo-drink-s09 .inner .h5,
+.ooo-drink-s09 .inner .h2,
+.ooo-drink-s09 .accordion_body .col .accordion_hand .h22{
+    color: #023940 !important;
+}
+.ooo-drink-s09 .inner .h5, 
+.ooo-drink-s09 .inner .h2{
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left;
+}
+.ooo-drink-s09 .accordion_body .col{
+    border-color: #023940 !important;
+}
+.ooo-drink-s09 .accordion_body .col .accordion_content article {
+    background-color: #E2DEB1 !important;
+    color: #023940 !important;
+}
+
+
+
+
+.ooo-drink-s10:after {
+    display:none !important;
+}
+.ooo-drink-s10 .outf_st_titleonly .outf_st_titleo,
+.ooo-drink-s10 .ElementsWidget-prefix .R-TextHeading,
+.ooo-drink-s10 .ElementsWidget-prefix .R-TextBody,
+.ooo-drink-s10 .ElementsWidget-prefix .ElementsWidget .cssVar-authorName{
+    color: #023940 !important;
+}
+.ooo-drink-s10 .ElementsWidget-prefix .ElementsWidget .R-ContentList .R-ContentList__item{
+    background-color: #DBE6DB !important;
+}
+
+.ooo-drink-s10 .ElementsWidget-prefix .R-Button--primary{
+  background-color: #023940 !important;
+  border-color: #023940 !important;
+}
+.ElementsWidget-prefix .R-AvatarThumbnail .R-AvatarThumbnail__inner .R-TextHeading{    color: #305D62 !important;}
+
+
+
+.youmightalsolike.ooo-drink-s11 {
+    position: relative;
+    background-color: #F4EFD0;
+}
+.youmightalsolike.ooo-drink-s11 .right .colin{background-color: #D2DCC7;}
+.youmightalsolike.ooo-drink-s11:before{
+  display:none;
+}
+@media (max-width: 1080px) and (min-width: 768px){
+    .ooo-drink-s04 .pro_vacay_differences_img {
+        top: -140px;
+        width: 230px;
+    }
+    .ooo-drink-s04 .pvd_animation_img {
+        width: 640px;
+    }
+}
+@media (max-width: 767px){
+.ooo-drink-video {
+    width: 100%;
+    max-width: 100%;
+    padding: 0px 0 60px;
+}
+.ooo-drink-video .inner {
+    min-height: auto;
+}
+.ooo-drink-video .video {
+    height: 300px;
+    border-radius: 28px;
+}
+    .ooo-drink-s04 {
+        position: relative;
+        padding-bottom: 0px;
+    }
+    .ooo-drink-s04 .pvd__inner { }
+    .ooo-drink-s04 .pro_vacay_differences_img {
+        display: none;
+    }
+    .ooo-drink-s04 .pvd__title { }
+    .ooo-drink-s04 .pvd__subtitle { }
+    .ooo-drink-s04 .pvd__item {
+        width: 100%;
+        background-color: #fffce8;
+        margin: 0 0%;
+        margin-bottom: 40px;
+    }
+    .ooo-drink-s04 .pvd_animation_img {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: unset;
+        margin-top: -75px;
+    }
+    .ooo-drink-s04 .pvd_animation_img img {
+        margin-left: 0;
+        margin-bottom: -21px;
+    }
+    .ooo-drink-s07{
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    .ooo-drink-s08 .outf_s5_usvsthem_in{
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+
+    .ooo-drink-s09:after{
+        right: 0 !important;
+        left: unset !important;
+        top: -119px !important;
+        height: 200px !important;
+        width: 200px !important;
+    }
+    .nightcap-thc-gummies-ps3 .accordion_body .col{
+         width: 100% !important; 
+    }
+    .nightcap-thc-gummies-ps3 .pro_vacay_expect_bg.mobile{ display: none !important;}
+
+    .ooo-drink-s08 .outf_s5_usvsthem_in {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+
+    .MainProduct_single_page.ooo-drink-s01 {
+        background-color: #e6eee6;
+        padding-bottom: 30px;
+    }
+}
+
+
+.the_double_variant_tooltip {
+    color: #023940!important;
+}
+.the_double_variant_tooltip em{
+    background-color: #023940!important;
+}
+
+.product-form__input:last-child input[type=radio]:checked+label{background-color: #023940!important;}
+
+.MainProduct_single_page .product__media_list .col:nth-child(3) img{    width: 32px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ooo-drink-s03 .problem-solution-section__slide {
+    box-sizing: border-box;
+    height: 409px;
+}
+.ooo-drink-s03 .problem-solution-section__slide .video{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -0%;
+    top: -0%;
+    z-index: 2;
+}
+.MainProduct_single_page .product__media_list .col:nth-child(3) img{
+  width: auto;
+}
+
+.MainProduct_single_page .product__media_list .col img{
+    width: auto !important;
+    height: 53px !important;
+}
+@media (max-width: 1054px){
+  .ooo-drink-s03 .problem-solution-section__slide .video {
+      display: block;
+      width: 108%;
+      height: 104%;
+      position: absolute;
+      left: -4%;
+      top: -2%;
+      z-index: 2;
+  }
+}
+@media (max-width: 1023px){
+  .ooo-drink-s03 .problem-solution-section__slides {
+      max-width: 680px;
+      margin: 0px auto;
+  }
+}
+
+@media (max-width: 425px) {
+    .ooo-drink-s03 .problem-solution-section__slide {
+        box-sizing: border-box;
+        height: 380px;
+        margin-right: 26px;
+    }
+    .ooo-drink-s03 .problem-solution-section__slides {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .ooo-drink-s03 .problem-solution-section__slide .video {
+        display: block;
+        width: 103%;
+        height: 106%;
+        position: absolute;
+        left: -2%;
+        top: -3%;
+        z-index: 2;
+    }
+}

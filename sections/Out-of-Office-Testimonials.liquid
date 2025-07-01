@@ -1,0 +1,166 @@
+<style type="text/css">
+
+  @media (min-width:1025px){
+    {% if section.settings.section_padding_d != blank %}
+      .uid{{ section.id }}{
+        padding:{{section.settings.section_padding_d}};
+      }
+    {% endif %}
+  }
+  @media (max-width:1024px){
+    {% if section.settings.section_padding_m != blank %}
+      .uid{{ section.id }}{
+        padding:{{section.settings.section_padding_m}};
+      }
+    {% endif %}
+  }
+</style>
+<section class="outf_s6 move_image_bottom_{{ section.settings.move_image_bottom }} uid{{ section.id }} {% if section.settings.show_bottom_svg == true %}show_svg_bottom{% else %}{% endif %} {{ section.settings.section_class }}" >
+	<div class="outf_s6_img">
+		<img src="{{ section.settings.image | img_url:'1920X' }}" alt="{{ section.settings.imagealt  }}">
+	</div>
+    <div class="outf_s6_in">
+    	<div class="inner">
+    		<p class="h5">{{ section.settings.subtitle  }}</p>
+    		<p class="h2">{{ section.settings.title  }}</p>
+    		<div class="outf_s6_slider">
+    			{% for block in section.blocks %}
+    			<div>
+    				<div class="outf_s6_col">
+                      <div class="outf_s6_colin">
+    					<div class="image"><img src="{{ block.settings.image2 | img_url:'768X' }}" alt="{{ block.settings.imagealt2 }}"></div>
+    					<p class="title">{{ block.settings.title }}</p>
+    					<article>{{ block.settings.text }}</article>
+    					<span class="name">{{ block.settings.tesname }}</span>
+                      </div>
+    				</div>
+    			</div>
+    			{% endfor %}
+    		</div>
+          {% if section.settings.btn_label != blank %}
+          <div class="button_link" style="text-align:center;">
+    				<a href="{{ section.settings.btn_link }}">{{ section.settings.btn_label }}</a>
+    			</div>
+          {% endif %}
+    	</div>
+    </div>
+    {% if section.settings.show_bottom_svg %}        
+    <div class="svg_bottom variant-svg">
+        <svg width="1440" height="125" viewBox="0 0 1440 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1138 89.5001C1239.6 95.1001 1379.67 59.6667 1440 40V124.5H0V0C48 40.5 138 97 272.5 101.5C407 106 609 37.5001 717 27.0001C825 16.5001 1011 82.5001 1138 89.5001Z" fill="#FDF6F0"/>
+        </svg>
+    </div>
+    {% endif %}
+</section>
+
+
+{% schema %}
+{
+    "name": "Home - Testimonials",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Sub-Title",
+          "default": "Testimonials"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "What they Say"
+        },
+        {
+            "type":"checkbox",
+            "id":"move_image_bottom",
+            "label":"Move Image bottom"
+        },
+        {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Image"
+        },
+        {
+          "type": "textarea",
+          "id": "imagealt",
+          "label": "Image ALT"
+        },
+        {
+          "type": "text",
+          "id": "btn_label",
+          "label": "Button label"
+        },
+        {
+          "type": "text",
+          "id": "btn_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "text",
+          "id": "section_padding_d",
+          "label": "Section Padding (Desktop)",
+          "info": "format: 20px 20px 10px 10px // top right bottom left"
+        },
+        {
+          "type": "text",
+          "id": "section_padding_m",
+          "label": "Section Padding (Mobile)",
+          "info": "format: 20px 20px 10px 10px // top right bottom left"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_bottom_svg",
+            "default": false,
+            "label": "Show Bottom SVG (wave)"
+        },
+        {
+            "type": "text",
+            "id": "section_class",
+            "label": "Section Class"
+        }
+    ],
+    "blocks": [
+        {
+        "type":"testimonials",
+        "name": "Testimonials",
+        "settings": [
+            {
+                "type":"textarea",
+                "label": "Title",
+                "id": "title",
+                "default": "Just What I Needed"
+            },
+            {
+              "type": "richtext",
+              "id": "text",
+              "default": "<p>These help me relax after a long day and help me get some good *** sleep lol Soul just got a loyal customer!! Great product guys.</p>",
+              "label": "Content"
+            },
+            {
+                "type":"textarea",
+                "label": "Name",
+                "id": "tesname"
+            },            
+		    {
+		        "type":"image_picker",
+		        "id":"image2",
+		        "label":"Rating Image"
+		    },            
+		    {
+		        "type":"text",
+		        "id":"imagealt2",
+		        "label":"Rating Image ALT"
+		    }
+        ]
+        }
+    ],
+    "presets": [
+        {
+          "name": "Home - Testimonials",
+          "blocks": []
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,144 @@
+<style>
+  #age-gate{
+    background-color: #023940ba;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .age-gate-in{
+    background-color: #FFFFFF;
+    padding: 40px 20px 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #00000059;
+    max-width: 600px;
+    width: 80%;
+  }
+  .age-gate-title{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .age-gate-btns button{
+    background-color: #023940;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 14px 36px 13px 36px;
+    border-radius: 30px;
+    line-height: 1;
+    border: 2px solid #023940;
+    margin: 10px;
+  }
+  .age-gate-btns button:hover{
+    opacity: .9;
+  }
+  .age-gate-btns #no-button{
+    background-color: transparent;
+    color: #023940;
+  }
+</style>
+{%- assign cookie_handle = section.settings.cookie_handle -%}
+<div id="age-gate">
+    <div class="age-gate-in">
+      <p  class="age-gate-title">{{section.settings.heading}}</p>
+      <div class="age-gate-btns">
+        <button id="yes-button">{{section.settings.yes_button}}</button>
+        <button id="no-button">{{section.settings.no_button}}</button>
+      </div>
+    </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const ageGate = document.getElementById("age-gate");
+    const content = document.getElementById("content");
+    const yesButton = document.getElementById("yes-button");
+    const noButton = document.getElementById("no-button");
+
+    // Check if the user has a valid age cookie
+    const hasValidAgeCookie = () => {
+        const ageCookie = document.cookie.replace(/(?:(?:^|.*;\s*){{cookie_handle}}\s*=\s*([^;]*).*$)|^.*$/, "$1");
+        return ageCookie !== "" && !isNaN(parseInt(ageCookie));
+    };
+
+    // Display the appropriate content based on age cookie
+    if (hasValidAgeCookie()) {
+        ageGate.style.display = "none";
+        //content.style.display = "block";
+    } else {
+        ageGate.style.display = "flex";
+        //content.style.display = "none";
+    }
+
+    // Handle "Yes" button click
+    yesButton.addEventListener("click", function () {
+        // Set a cookie to remember the user's age for 7 days
+        const expirationDate = new Date();
+        expirationDate.setDate(expirationDate.getDate() + 7);
+        document.cookie = `{{cookie_handle}}=18; expires=${expirationDate.toUTCString()}; path=/`;
+
+        // Hide the age gate and display the content
+        ageGate.style.display = "none";
+        //content.style.display = "block";
+    });
+
+    // Handle "No" button click
+    noButton.addEventListener("click", function () {
+        window.location.href = "{{section.settings.exit_link}}";
+    });
+});
+
+</script>
+{% schema %}
+{
+    "name": "Age gate (Popup)",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "textarea",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Are you 18 years or older?"
+        },
+        {
+          "type": "text",
+          "id": "yes_button",
+          "label": "Yes Button Text",
+          "default": "Yes"
+        },
+        {
+          "type": "text",
+          "id": "no_button",
+          "label": "No Button Text",
+          "default": "No"
+        },
+        {
+          "type": "textarea",
+          "id": "exit_link",
+          "label": "Exit Link",
+          "default": "/"
+        },
+        {
+          "type": "text",
+          "id": "cookie_handle",
+          "label": "Cookie Handle",
+          "default": "user_age",
+          "info": "Browser will save cookie using this handle. It is useful if user already passed a age gate from another page."
+        }
+    ],
+    "presets": [
+        {
+          "name": "Age gate (Popup)",
+          "blocks": []
+        }
+    ]
+}
+{% endschema %}

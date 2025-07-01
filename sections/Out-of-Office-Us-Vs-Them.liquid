@@ -1,0 +1,148 @@
+<style type="text/css">
+
+</style>
+
+<div class="outf_s5_usvsthem uid{{ section.id }}  {{ section.settings.section_class }}">
+
+    <div class="outf_s5_img">
+        <img src="{{ section.settings.image | img_url:'1920X' }}" alt="">
+    </div>
+<div class="outf_s5_usvsthem_in">
+	<div class="inner">
+        <p class="outf_s5_subtitle">{{ section.settings.subtitle  }}</p>
+        <p class="outf_s5_title">{{ section.settings.title  }}</p>
+
+        <div class="outf_s5_uvt">
+          <div class="outf_s5_uvtcol ">
+            <div class="col1"></div>
+            <div class="col2"><span style="background-image:url({{ section.settings.image2 | img_url:'1920X' }});"></span></div>
+            <div class="col3"></div>
+          </div>
+          <div class="outf_s5_uvt_in">
+        	{% for block in section.blocks %}
+        	<div class="col">
+        		<div class="col1">
+        			{% if block.settings.title != blank %}
+        			<p>{{ block.settings.title }}</p>
+        			{% endif %}
+        		</div>
+        		<div class="col2">
+        			{% if block.settings.ustitle != blank %}
+        			<p>{{ block.settings.ustitle }}</p>
+        			{% endif %}
+
+        			{% if block.settings.image != blank %}
+        			<span><img src="{{ block.settings.image | img_url:'768X' }}" alt=""></span>
+        			{% endif %}
+        		</div>
+        		<div class="col3">
+        			{% if block.settings.themetitle != blank %}
+        			<p>{{ block.settings.themetitle }}</p>
+        			{% endif %}
+
+        			{% if block.settings.image2 != blank %}
+        			<span><img src="{{ block.settings.image2 | img_url:'768X' }}" alt=""></span>
+        			{% endif %}
+        		</div>
+        	</div>
+        	{% endfor %}
+         </div>
+        </div>
+	</div>
+</div>
+  {% if section.settings.show_bottom_svg %}
+    <span class="svg_bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1919.879" height="187.163" viewBox="0 0 1919.879 187.163">
+          <g id="Scroll_Group_6" data-name="Scroll Group 6" transform="translate(-145 14)" style="isolation: isolate">
+            <g id="Group_1529" data-name="Group 1529" transform="translate(145.091 -4769.833)">
+              <path id="Path_2385" data-name="Path 2385" d="M-8.376,772.57s173.8-131.327,507.259-82.237C846.923,741.572,1091,589.749,1387.218,587.02c297.953-10.547,400.282,26.368,653.088,86.949,6.019,748.92-14.478,212.829-14.478,1107.653H135.215Z" transform="translate(2041.412 6832.224) rotate(180)" fill="#feecd5"/>
+              <path id="Path_2382" data-name="Path 2382" d="M-8.376,796.316s176.061-147.974,513.843-92.661c352.557,57.734,599.8-113.334,899.864-116.408,301.82-11.884,405.478,29.711,661.565,97.971,6.1,843.849-14.666,239.806-14.666,1248.053H137.079Z" transform="translate(-136.715 4184.605)" fill="#feecd5"/>
+            </g>
+          </g>
+        </svg>
+    </span>
+  {% endif %}
+</div>
+
+
+{% schema %}
+{
+    "name": "Home - Us Vs. Them",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "textarea",
+          "id": "subtitle",
+          "label": "Sub-Title",
+          "default": "Us Vs. Them"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "Now Every Day Can Feel Like A Vacay."
+        },
+        {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Key Image"
+        },
+        {
+            "type":"image_picker",
+            "id":"image2",
+            "label":"Background Image (Vacay Gummies)"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_bottom_svg",
+            "default": true,
+            "label": "Show Bottom SVG (wave)"
+        },
+        {
+            "type": "text",
+            "id": "section_class",
+            "label": "Section Class"
+        }
+    ],
+    "blocks": [
+        {
+        "type":"usvsthem",
+        "name": "Us Vs. Them",
+        "settings": [
+            {
+                "type":"textarea",
+                "label": "Title",
+                "id": "title"
+            },              
+            {
+                "type":"textarea",
+                "label": "Us Title",
+                "id": "ustitle"
+            },
+		        {
+		            "type":"image_picker",
+		            "id":"image",
+		            "label":"Us/Check Image"
+		        },              
+            {
+                "type":"textarea",
+                "label": "Theme Title",
+                "id": "themetitle"
+            },
+		        {
+		            "type":"image_picker",
+		            "id":"image2",
+		            "label":"Theme/Close Image"
+		        }
+        ]
+        }
+    ],
+    "presets": [
+        {
+          "name": "Home - Us Vs. Them",
+          "blocks": []
+        }
+    ]
+}
+{% endschema %}

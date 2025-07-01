@@ -1,0 +1,187 @@
+{% assign sliderBlock = section.blocks | where: 'type', 'Image' %}
+ {{ 'endrock.styles.css' | asset_url | stylesheet_tag }}
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+</style>
+<section class="er-lp-heroSliderVariantB itemCV-{{ section.id }} {{ section.settings.section_class }}" data-variant="b" style="display: {% if section.settings.show == false %}none{% else %}block{% endif %};">
+  <div class="er-lp-heroSliderVariantB-contentInfo item-{{ section.id }}">
+    <div class="er-lp-heroSliderVariantB-contentText-div">
+      <p class="er-lp-heroSliderVariantB-contentText-title">{{ section.settings.stars }}</p>
+      <p class="er-lp-heroSliderVariantB-contentText-stars">
+        <svg width="95" height="16" viewBox="0 0 95 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8 12L3.62749 14.4721L4.61535 9.23607L0.430703 5.52786L6.21375 4.76393L8.8 0L11.3863 4.76393L17.1693 5.52786L12.9846 9.23607L13.9725 14.4721L8.8 12Z" fill="#FBD026"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M34.4001 12L29.2276 14.4721L30.2154 9.23607L26.0308 5.52786L31.8138 4.76393L34.4001 0L36.9864 4.76393L42.7694 5.52786L38.5847 9.23607L39.5726 14.4721L34.4001 12Z" fill="#FBD026"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M60.0002 12L54.8277 14.4721L55.8155 9.23607L51.6309 5.52786L57.4139 4.76393L60.0002 0L62.5865 4.76393L68.3695 5.52786L64.1848 9.23607L65.1727 14.4721L60.0002 12Z" fill="#FBD026"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M85.5998 12L80.4273 14.4721L81.4152 9.23607L77.2305 5.52786L83.0135 4.76393L85.5998 0L88.1861 4.76393L93.9691 5.52786L89.7845 9.23607L90.7723 14.4721L85.5998 12Z" fill="#FBD026"/>
+        </svg>
+        {{ section.settings.title }}
+      </p>
+      <p class="er-lp-heroSliderVariantB-contentText-subtitle">{{ section.settings.subtitle }}</p>
+      <div class="er-lp-heroSliderVariantB-contentText-list">
+        {{ section.settings.list }}
+      </div>
+      <div class="er-lp-heroSliderVariantB-group-buttons">
+        <a class="er-lp-heroSliderVariantB-contentText-btn" href="{{ section.settings.link }}">
+          {{- section.settings.btn -}}
+        </a>
+        {% if section.settings.secondary_btn != blank and section.settings.secondary_link != blank %}
+          <a class="er-lp-heroSliderVariantB-contentText-link" href="{{ section.settings.secondary_link }}">
+            {{ section.settings.secondary_btn }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="er-lp-heroSliderVariantB-contentSlider">
+      <div class="oolander_heroslider">
+          <div class="left">
+              <div class="oolander_heroslider_full">
+                  {%- for block in sliderBlock -%}
+                  <div>
+                      <div class="col">
+                          <div class="image" style="background-image: url({{ block.settings.imgSlider |  img_url: 'master' }});">
+                              <img src="{{ block.settings.imgSlider |  img_url: 'master' }}" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  {% endfor %}
+              </div>
+          </div>
+          <div class="right">
+              <div class="oolander_herosliderthum">
+                  {%- for block in sliderBlock -%}
+                  <div>
+                      <div class="col">
+                          <div class="image" style="background-image: url({{ block.settings.imgSlider |  img_url: 'master' }});">
+                              <img src="{{ block.settings.imgSlider |  img_url: 'master' }}" alt="">
+                          </div>
+                      </div>
+                  </div>
+                  {% endfor %}
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="er-lp-heroSliderVariantB-contentAnim">
+    {% render 'ooo-lander-hero-animation' %}
+  </div>
+</section>
+
+
+<style>
+  .er-lp-heroSliderVariantB{  padding-top: 7rem; }
+  .er-lp-heroSliderVariantB-contentText-div p{ margin: 0px;   }
+  .er-lp-heroSliderVariantB-contentText-div ul{ margin: 0px; padding: 0px; }
+  .er-lp-heroSliderVariantB-contentText-div a{    text-decoration: none !important;  }
+  
+  .itemCV-{{ section.id }}{
+    background-image: url("{{ section.settings.hero_img_section |  img_url: 'master' }}");
+    background-position: center top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  @media (min-width: 0px) and (max-width: 978px) {
+    .itemCV-{{ section.id }}{
+      background-image: url("{{ section.settings.hero_img_section_mobile |  img_url: 'master' }}");
+      background-position: center top;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Hero Slider Test B",
+  "class": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show",
+      "label": "Show hero",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_img_section",
+      "label": "Imagen Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_img_section_mobile",
+      "label": "Imagen Mobile"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title Heading"
+    },
+    {
+      "type": "text",
+      "id": "stars",
+      "label": "Text Stars"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "SubTitle Heading"
+    },
+    {
+      "type": "text",
+      "id": "legacy",
+      "label": "Text "
+    },
+    {
+      "type": "richtext",
+      "id": "list",
+      "label": "List"
+    },
+    {
+      "type": "text",
+      "id": "btn",
+      "label": "Heading"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link Btn"
+    },
+    {
+      "type": "text",
+      "id": "secondary_btn",
+      "label": "Label secondary CTA"
+    },
+    {
+      "type": "url",
+      "id": "secondary_link",
+      "label": "Link secondary CTA"
+    },
+    {
+      "type": "text",
+      "id": "section_class",
+      "label": "Section Class"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "Image",
+      "name": "Select Slider",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "imgSlider",
+          "label": "Imagen Slider"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Slider Test B",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

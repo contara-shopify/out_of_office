@@ -1,0 +1,445 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "826b830c-7b45-40d3-8a13-702ebdb6338e": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "0a2f2b2a-988d-432d-be5a-b987c141ff7f": {
+          "type": "shopify://apps/prive-subscriptions/blocks/subs-widget-block/42050940-af72-406b-ba49-06f437b1dbb5",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "826b830c-7b45-40d3-8a13-702ebdb6338e",
+        "price",
+        "0a2f2b2a-988d-432d-be5a-b987c141ff7f",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12,
+        "section_bacground_color": "",
+        "section_bacground_color_mobile": "",
+        "sectionclass": "",
+        "js_code": "",
+        "cssstyle_code": ""
+      }
+    },
+    "ooo_product_differences_FtH89c": {
+      "type": "ooo-product-differences",
+      "blocks": {
+        "item_qRHdpr": {
+          "type": "item",
+          "settings": {
+            "title": "The Single",
+            "subtitle": "1.5MG THC | 15Mg CBD",
+            "image": "shopify://shop_images/single.png",
+            "body": "<ul><li><strong>Destination:</strong> Gentle Microdose</li><li><strong>Traveler:</strong><br/>New THC Users, Anyone<br/>Seeking A Subtle Lift</li><li><strong>Itinerary:</strong><br/>Checking emails, writing<br/>songs, and feeling vacay<br/>vibes at noon.</li></ul>",
+            "heading_bg": "#f1edaa",
+            "heading_bg2": ""
+          }
+        },
+        "item_7gqAHx": {
+          "type": "item",
+          "settings": {
+            "title": "The Double",
+            "subtitle": "3MG THC | 30MG CBD",
+            "image": "shopify://shop_images/bouble.png",
+            "body": "<ul><li><strong>Destination:</strong> Perfect Buzz</li><li><strong>Traveler:</strong><br/>Veterans, New Users<br/>Ready For More</li><li><strong>Itinerary:</strong><br/>Watching a movie, going<br/>for a jog, meeting friends<br/>out at the bar.</li></ul>",
+            "heading_bg": "#f2c1ca",
+            "heading_bg2": ""
+          }
+        },
+        "item_ihyWqC": {
+          "type": "item",
+          "settings": {
+            "title": "The Triple",
+            "subtitle": "6MG THC | 45MG CBD",
+            "image": "shopify://shop_images/triple.png",
+            "body": "<ul><li><strong>Destination:</strong> Noticeably High</li><li><strong>Traveler:</strong><br/>THC Users Who Want To Feel High, Semi-Newbies Seeking Blast-Off<br/><br/></li><li><strong>Itinerary:</strong><br/>Going to a party, going to a concert, going deep on a streaming binge.</li></ul>",
+            "heading_bg": "#fdcca4",
+            "heading_bg2": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_qRHdpr",
+        "item_7gqAHx",
+        "item_ihyWqC"
+      ],
+      "settings": {
+        "subtitle": "Which OOO Oil Drops Are Right For You?",
+        "title": "Find Out Which Out Of Office Oil Drops <br>Deliver The High You Desire.",
+        "image": "shopify://shop_images/IMG_3439_1.png",
+        "section_bacground_color": "#fffaf5",
+        "section_bacground_color_mobile": "#fffaf5",
+        "sectionclass": ""
+      }
+    },
+    "7e03a3a7-8c2b-4599-9cdb-78636c9a9be6": {
+      "type": "Out-of-Office-Product-What-To-Expect",
+      "blocks": {
+        "e63d809e-e150-4cfd-b722-5db8dff6fe52": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "A Microdosed Experience",
+            "text": "<p>It’s a small amount of THC, so you can get buzzed, not blitzed.</p>"
+          }
+        },
+        "088b3bcd-c5fe-4045-88c8-c4ec2eff2285": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Immediate Enjoyment",
+            "text": "<p>These delightful little drops are fast acting, without being overwhelming.</p>"
+          }
+        },
+        "05a89e28-1f28-4178-ab93-63db1969ba7c": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Replace Your Glass Of Wine",
+            "text": "<p>You get a mild buzz, without having to drink. OOO &gt; hangovers!</p>"
+          }
+        },
+        "559a5722-6cc5-451f-bc8e-15fc38dbc9dc": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Enhanced Focus And Creativity",
+            "text": "<p>Whether you've got a full inbox to clear or you're creating a symphony, Out of Office can help you get there.</p>"
+          }
+        },
+        "7e3b0ac1-cbb7-482e-bbd3-3f79b9aa8242": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Melatonin Substitute",
+            "text": "<p>We know melatonin isn't for everyone. With Out of Office, your sleep can still be on point!</p>"
+          }
+        },
+        "41c03eae-ffe0-4059-ab08-e472e78fb411": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "The Most Delicious",
+            "text": "<p>We know how to make everything taste great. Did you expect anything less?</p>"
+          }
+        }
+      },
+      "block_order": [
+        "e63d809e-e150-4cfd-b722-5db8dff6fe52",
+        "088b3bcd-c5fe-4045-88c8-c4ec2eff2285",
+        "05a89e28-1f28-4178-ab93-63db1969ba7c",
+        "559a5722-6cc5-451f-bc8e-15fc38dbc9dc",
+        "7e3b0ac1-cbb7-482e-bbd3-3f79b9aa8242",
+        "41c03eae-ffe0-4059-ab08-e472e78fb411"
+      ],
+      "settings": {
+        "wave_img": true,
+        "background_img": false,
+        "subtitle": "What To Expect",
+        "title": "Unwind like you’re on Vacay.",
+        "image": "shopify://shop_images/ooo-acc-img.jpg",
+        "image2": "shopify://shop_images/ooo-acc-img.jpg",
+        "text_color": "",
+        "text_bacground_color": "",
+        "section_bacground_color": "",
+        "section_bacground_color_mobile": "",
+        "sectionclass": ""
+      }
+    },
+    "1b6840d3-dd48-43de-92b2-c5748c97eed0": {
+      "type": "Out-of-Office-Product-How-To-Use",
+      "settings": {
+        "subtitle": "How To Use",
+        "title": "Raise your <span>drops,</span> not your glass.",
+        "enable_gif": false,
+        "image": "shopify://shop_images/2024-03-14_Plane-animation_Full_UPD-1_preview.gif",
+        "image2": "shopify://shop_images/2024-03-14_Plane-animation_Mobile_UPD-2_preview.gif",
+        "section_bacground_color": "",
+        "section_bacground_color_mobile": "",
+        "sectionclass": ""
+      }
+    },
+    "ef74a310-6690-48bc-8dbb-5ad5c2ff4da5": {
+      "type": "Out-of-Office-Product-Us-Vs-Them",
+      "blocks": {
+        "87765264-21db-4d3f-ae0f-b797ac6c176a": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "",
+            "ustitle": "OOO <br>OIL DROPS",
+            "image": "shopify://shop_images/us_tincture.svg",
+            "themetitle": "THE OTHER <br>GUYS",
+            "image2": "shopify://shop_images/Icons__Blank_Tincture.svg"
+          }
+        },
+        "3dd90d97-d50a-449a-93db-65b93cb70be7": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "A Microdose You Can Feel",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/closse.svg"
+          }
+        },
+        "352952f1-1894-43d1-a181-508ddeb8e8e9": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Won’t Send You Into Orbit",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/closse.svg"
+          }
+        },
+        "9588f657-07f7-4c64-ab3e-4fe3d89ba52a": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Delicious (Duh!)",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/closse.svg"
+          }
+        },
+        "4f8f0e43-892c-492a-be75-435f3fa38562": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "No Fake Stuff",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/closse.svg"
+          }
+        },
+        "e600a6fe-be41-4d77-8e68-f4c30372a4e6": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Organically Grown Hemp",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/closse.svg"
+          }
+        },
+        "7f52bef5-574c-4fce-b6ad-8dc9b8bba574": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "MCT Oil",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/closse.svg"
+          }
+        },
+        "af0b915a-2a40-4a8b-8c57-39f0d2d70954": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Vegan & Gluten Free",
+            "ustitle": "",
+            "image": "shopify://shop_images/check-icon.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/closse.svg"
+          }
+        }
+      },
+      "block_order": [
+        "87765264-21db-4d3f-ae0f-b797ac6c176a",
+        "3dd90d97-d50a-449a-93db-65b93cb70be7",
+        "352952f1-1894-43d1-a181-508ddeb8e8e9",
+        "9588f657-07f7-4c64-ab3e-4fe3d89ba52a",
+        "4f8f0e43-892c-492a-be75-435f3fa38562",
+        "e600a6fe-be41-4d77-8e68-f4c30372a4e6",
+        "7f52bef5-574c-4fce-b6ad-8dc9b8bba574",
+        "af0b915a-2a40-4a8b-8c57-39f0d2d70954"
+      ],
+      "settings": {
+        "show_svg": true,
+        "subtitle": "Us Vs. Them",
+        "title": "Now every day can feel like a <span>Vacay.</span>",
+        "image2": "shopify://shop_images/DSC06819.jpg",
+        "section_bacground_color": "",
+        "section_bacground_color_mobile": "",
+        "sectionclass": ""
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "c006cb79-ce19-4cf2-948b-b12bd4712891": {
+      "type": "Out-of-Office-Product-Got-Questions",
+      "blocks": {
+        "1bd4532d-8466-48ce-a02a-15dd4d0aadc5": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "What ingredients are used in Out of Office Oil Drops?",
+            "text": "<p>Our Out of Office Oil drops contain 1.5mg Delta 9 THC and 15mg CBD, both derived from organically farmed hemp. We use MCT oil as a carrier, and natural pineapple flavor.</p>"
+          }
+        },
+        "subscribesave_WE6fjG": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Are Out of Office Oil Drops legal, and if so, where?",
+            "text": "<p>The legality of THC products varies depending on location; they are legal in some states for medicinal or recreational use. However, they remain illegal under federal law in the United States. It's essential to check state regulations before purchasing or consuming THC products.</p>"
+          }
+        },
+        "5f6ca34e-85a3-4743-a6cf-21c07b31f2fa": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "How do you determine the right dosage of Out of Office Oil Drops for an optimal experience?",
+            "text": "<p>Start with a low dose, such as 1.5-3mg, and wait at least two hours to understand the effects before considering consuming more. Factors such as body weight, metabolism, tolerance, and the desired result will influence the ideal dosage.</p>"
+          }
+        },
+        "c86b3dbd-ff82-4247-9e65-80f0864e4235": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Are there any safety concerns or potential side effects associated with Out of Office Oil Drops?",
+            "text": "<p>Safety concerns include impaired coordination, increased heart rate and anxiety to excessive usage. Overconsumption can lead to uncomfortable side effects such as paranoia or extreme sedation.</p>"
+          }
+        },
+        "fb079e1f-e1df-4846-ab89-78ddb260e2d0": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "What are the best practices for safely and effectively consuming Out of Office Oil Drops?",
+            "text": "<p>Best practices include starting with a low dose, waiting to understand the full effects before consuming more, storing gummies safely out of reach of children and pets, and not driving or operating heavy machinery after consumption. Always stay hydrated and consume Out of Office Oil Drops in a comfortable and safe environment.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1bd4532d-8466-48ce-a02a-15dd4d0aadc5",
+        "subscribesave_WE6fjG",
+        "5f6ca34e-85a3-4743-a6cf-21c07b31f2fa",
+        "c86b3dbd-ff82-4247-9e65-80f0864e4235",
+        "fb079e1f-e1df-4846-ab89-78ddb260e2d0"
+      ],
+      "settings": {
+        "subtitle": "You’ve Got Questions",
+        "title": "We’ve Got Answers.",
+        "section_bacground_color": "",
+        "section_bacground_color_mobile": "",
+        "sectionclass": ""
+      }
+    },
+    "450d5aab-7a5d-4a1b-9e9f-38f44d69ec04": {
+      "type": "product-reviews-io",
+      "settings": {
+        "enable_title": false,
+        "title": "Everyone is Talking",
+        "enable_custom_product": false,
+        "product": "",
+        "section_bacground_color": "",
+        "section_bacground_color_mobile": "",
+        "sectionclass": ""
+      }
+    },
+    "age_gate_GRUBBR": {
+      "type": "age_gate",
+      "settings": {
+        "heading": "By clicking \"Enter\" you verify that you are 21 years of age or older.",
+        "yes_button": "Enter",
+        "no_button": "Exit",
+        "exit_link": "/",
+        "cookie_handle": "user_age"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ooo_product_differences_FtH89c",
+    "7e03a3a7-8c2b-4599-9cdb-78636c9a9be6",
+    "1b6840d3-dd48-43de-92b2-c5748c97eed0",
+    "ef74a310-6690-48bc-8dbb-5ad5c2ff4da5",
+    "related-products",
+    "c006cb79-ce19-4cf2-948b-b12bd4712891",
+    "450d5aab-7a5d-4a1b-9e9f-38f44d69ec04",
+    "age_gate_GRUBBR"
+  ]
+}

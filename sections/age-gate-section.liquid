@@ -1,0 +1,322 @@
+<style>
+    body{
+        padding:0 !important;
+    }
+    .shopify-section-group-header-group,
+    .shopify-section-group-footer-group,
+    #age-gate,
+    .needsclick  {
+        display: none !important;
+    }
+  .age_gate_section{
+    min-height: 100vh;
+    background-color: {{section.settings.background_color}};
+    display: block !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .ags_logo{
+    width: 80%;
+    max-width: 660px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .ags_logo img{
+    max-width: 100px;
+    width: 90%;
+  }
+  .ags_inner{
+    width: 80%;
+    max-width: 660px;
+    margin: 0 auto;
+    background-color: {{section.settings.box_bg_color}};
+    padding: 50px;
+    border-radius: 30px;
+  }
+  .ags_title{
+    font-size: 42px;
+    line-height: 1.19;
+    margin: 0px;
+    padding-bottom: 0;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    margin-bottom: 35px;
+    color: {{section.settings.heading_color}};
+    text-align: center;
+  }
+  .ags_des{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 35px;
+    color: {{section.settings.paragraph_color}};
+    text-align: center;
+  }
+  .ags_des p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: inherit !important;
+    font-size: inherit;
+  }
+  .ags_btn{
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .ags_btn button{
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(2, 57, 64);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 50px;
+    color: {{section.settings.button_text_color}};
+    background-color: {{section.settings.button_color}};
+    border: 0;
+    text-transform: uppercase;
+    font-size:18px;
+  }
+  .ags_review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ags_review_icons{
+    padding-left: 3px;
+    padding-right: 3px;
+    transform: translateY(1px);
+  }
+  .ags_review_icons svg{
+    width: 15px;
+    height: auto;
+  }
+  .ags_review_icons svg path{
+    fill: {{section.settings.review_icon_color}};
+  }
+  .ags_review_text{
+    color: {{section.settings.review_text_color}};
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 767px){
+  .ags_logo img{
+    max-width: 140px;
+  }
+  .ags_inner{
+    width: 90%;
+    padding: 30px;
+  }
+  .ags_title{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 25px;
+  }
+  .ags_des{
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+  .ags_btn{
+    margin-bottom: 25px;
+  }
+  .ags_review_icons{
+    transform: translateY(-1px);
+  }
+  .ags_review_icons svg{
+    width: 12px;
+  }
+  .ags_review_text{
+    font-size: 12px;
+  }
+  }
+</style>
+{%- assign cookie_handle = section.settings.cookie_handle -%}
+<div id="age-gate-section" class="age_gate_section">
+  {% if section.settings.logo != blank %}
+    <div class="ags_logo"><img src="{{ section.settings.logo | img_url:'' }}" alt="soul"></div>
+  {% endif %}
+  <div class="ags_inner">
+    {% if section.settings.heading != blank %}
+      <p class="ags_title">{{ section.settings.heading }}</p>
+    {% endif %}
+    {% if section.settings.paragraph != blank %}
+      <div class="ags_des">{{ section.settings.paragraph }}</div>
+    {% endif %}
+    <div class="ags_btn">
+      <button id="agegate-yes-button">{{ section.settings.yes_button }}</button>
+    </div>
+    <div class="ags_review">
+      {% if section.settings.show_review_icon %}
+        <div class="ags_review_icons">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <path d="M6.43567 0.873852C6.61565 0.375382 7.31642 0.375383 7.49641 0.873853L8.68161 4.15628C8.76023 4.37403 8.9625 4.52186 9.19265 4.5298L12.6621 4.64943C13.1889 4.6676 13.4055 5.33807 12.9898 5.66431L10.2529 7.81259C10.0714 7.9551 9.99411 8.1943 10.0577 8.41696L11.0167 11.7733C11.1624 12.283 10.5954 12.6974 10.1586 12.4005L7.28188 10.4458C7.09104 10.3162 6.84103 10.3162 6.6502 10.4458L3.77349 12.4005C3.33663 12.6974 2.7697 12.283 2.91533 11.7733L3.87434 8.41696C3.93796 8.1943 3.8607 7.9551 3.67914 7.81259L0.942232 5.66431C0.526604 5.33807 0.743154 4.6676 1.27002 4.64943L4.73942 4.5298C4.96958 4.52186 5.17184 4.37403 5.25046 4.15628L6.43567 0.873852Z" fill="#EDE8E1"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <path d="M6.43567 0.873852C6.61565 0.375382 7.31642 0.375383 7.49641 0.873853L8.68161 4.15628C8.76023 4.37403 8.9625 4.52186 9.19265 4.5298L12.6621 4.64943C13.1889 4.6676 13.4055 5.33807 12.9898 5.66431L10.2529 7.81259C10.0714 7.9551 9.99411 8.1943 10.0577 8.41696L11.0167 11.7733C11.1624 12.283 10.5954 12.6974 10.1586 12.4005L7.28188 10.4458C7.09104 10.3162 6.84103 10.3162 6.6502 10.4458L3.77349 12.4005C3.33663 12.6974 2.7697 12.283 2.91533 11.7733L3.87434 8.41696C3.93796 8.1943 3.8607 7.9551 3.67914 7.81259L0.942232 5.66431C0.526604 5.33807 0.743154 4.6676 1.27002 4.64943L4.73942 4.5298C4.96958 4.52186 5.17184 4.37403 5.25046 4.15628L6.43567 0.873852Z" fill="#EDE8E1"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <path d="M6.43567 0.873852C6.61565 0.375382 7.31642 0.375383 7.49641 0.873853L8.68161 4.15628C8.76023 4.37403 8.9625 4.52186 9.19265 4.5298L12.6621 4.64943C13.1889 4.6676 13.4055 5.33807 12.9898 5.66431L10.2529 7.81259C10.0714 7.9551 9.99411 8.1943 10.0577 8.41696L11.0167 11.7733C11.1624 12.283 10.5954 12.6974 10.1586 12.4005L7.28188 10.4458C7.09104 10.3162 6.84103 10.3162 6.6502 10.4458L3.77349 12.4005C3.33663 12.6974 2.7697 12.283 2.91533 11.7733L3.87434 8.41696C3.93796 8.1943 3.8607 7.9551 3.67914 7.81259L0.942232 5.66431C0.526604 5.33807 0.743154 4.6676 1.27002 4.64943L4.73942 4.5298C4.96958 4.52186 5.17184 4.37403 5.25046 4.15628L6.43567 0.873852Z" fill="#EDE8E1"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <path d="M6.43567 0.873852C6.61565 0.375382 7.31642 0.375383 7.49641 0.873853L8.68161 4.15628C8.76023 4.37403 8.9625 4.52186 9.19265 4.5298L12.6621 4.64943C13.1889 4.6676 13.4055 5.33807 12.9898 5.66431L10.2529 7.81259C10.0714 7.9551 9.99411 8.1943 10.0577 8.41696L11.0167 11.7733C11.1624 12.283 10.5954 12.6974 10.1586 12.4005L7.28188 10.4458C7.09104 10.3162 6.84103 10.3162 6.6502 10.4458L3.77349 12.4005C3.33663 12.6974 2.7697 12.283 2.91533 11.7733L3.87434 8.41696C3.93796 8.1943 3.8607 7.9551 3.67914 7.81259L0.942232 5.66431C0.526604 5.33807 0.743154 4.6676 1.27002 4.64943L4.73942 4.5298C4.96958 4.52186 5.17184 4.37403 5.25046 4.15628L6.43567 0.873852Z" fill="#EDE8E1"></path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <path d="M6.43567 0.873852C6.61565 0.375382 7.31642 0.375383 7.49641 0.873853L8.68161 4.15628C8.76023 4.37403 8.9625 4.52186 9.19265 4.5298L12.6621 4.64943C13.1889 4.6676 13.4055 5.33807 12.9898 5.66431L10.2529 7.81259C10.0714 7.9551 9.99411 8.1943 10.0577 8.41696L11.0167 11.7733C11.1624 12.283 10.5954 12.6974 10.1586 12.4005L7.28188 10.4458C7.09104 10.3162 6.84103 10.3162 6.6502 10.4458L3.77349 12.4005C3.33663 12.6974 2.7697 12.283 2.91533 11.7733L3.87434 8.41696C3.93796 8.1943 3.8607 7.9551 3.67914 7.81259L0.942232 5.66431C0.526604 5.33807 0.743154 4.6676 1.27002 4.64943L4.73942 4.5298C4.96958 4.52186 5.17184 4.37403 5.25046 4.15628L6.43567 0.873852Z" fill="#EDE8E1"></path>
+          </svg>
+        </div>
+      {% endif %}
+      {% if section.settings.review_text != blank %}
+        <div class="ags_review_text">{{ section.settings.review_text }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const yesButton = document.getElementById("agegate-yes-button");
+
+    // Check if the user has a valid age cookie
+    const hasValidAgeCookie = () => {
+        const ageCookie = document.cookie.replace(/(?:(?:^|.*;\s*){{cookie_handle}}\s*=\s*([^;]*).*$)|^.*$/, "$1");
+        return ageCookie !== "" && !isNaN(parseInt(ageCookie));
+    };
+
+    // Display the appropriate content based on age cookie
+    if (hasValidAgeCookie()) {
+        //window.location.href = "{{section.settings.action_link}}";
+    }
+
+    // Handle "Yes" button click
+    yesButton.addEventListener("click", function () {
+        // Set a cookie to remember the user's age for 7 days
+        const expirationDate = new Date();
+        expirationDate.setDate(expirationDate.getDate() + 7);
+        document.cookie = `{{cookie_handle}}=18; expires=${expirationDate.toUTCString()}; path=/`;
+
+        // send user to the action location
+        window.location.href = "{{section.settings.action_link}}";
+    });
+
+
+});
+</script>
+{% schema %}
+{
+    "name": "Age gate (Section)",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Upload Logo"
+        },
+        {
+          "type": "textarea",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Are you 18 years or older?"
+        },
+        {
+          "type": "richtext",
+          "id": "paragraph",
+          "label": "Paragraph"
+        },
+        {
+          "type": "text",
+          "id": "yes_button",
+          "label": "Button Text",
+          "default": "Enter"
+        },
+        {
+          "type": "text",
+          "id": "action_link",
+          "label": "Action Link",
+          "default": "/"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_review_icon",
+          "label": "Show Review Icon",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "review_text",
+          "label": "Review Text",
+          "default": "9,000+ 5 Star Reviews"
+        },
+        {
+          "type": "text",
+          "id": "cookie_handle",
+          "label": "Cookie Handle",
+          "default": "user_age",
+          "info": "Browser will save cookie using this handle. It is useful if user already passed a age gate from another page."
+        },
+        {
+          "type": "header",
+          "content": "Styles"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background Color",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "box_bg_color",
+          "label": "Box Background Color",
+          "default": "#EDF8F7"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading Color",
+          "default": "#023940"
+        },
+        {
+          "type": "color",
+          "id": "paragraph_color",
+          "label": "Paragraph Color",
+          "default": "#023940"
+        },
+        {
+          "type": "color",
+          "id": "button_color",
+          "label": "Button Color",
+          "default": "#023940"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "label": "Button Text Color",
+          "default": "#fff"
+        },
+        {
+          "type": "color",
+          "id": "review_icon_color",
+          "label": "Review Icon Color",
+          "default": "#023940"
+        },
+        {
+          "type": "color",
+          "id": "review_text_color",
+          "label": "Review Text Color",
+          "default": "#023940"
+        }
+    ],
+    "presets": [
+        {
+          "name": "Age gate (Section)",
+          "blocks": []
+        }
+    ]
+}
+{% endschema %}

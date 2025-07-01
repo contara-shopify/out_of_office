@@ -1,0 +1,73 @@
+<style type="text/css">
+
+</style>
+<section class="outf_s1">
+    <div class="outf_s1_bg_s2 desktop_only"></div>
+	<div class="outf_s1_bg desktop_only" style="background-image: url({{ section.settings.image | img_url:'2880X' }});">
+      <img src="{{ section.settings.image | img_url:'2880X' }}">
+    </div>
+	<div class="outf_s1_bg mobile_only" style="background-image: url({{ section.settings.image2 | img_url:'1920X' }});"></div>
+<div class="outf_s1_in">
+	<div class="inner">
+		<div class="content">
+			<h1>{{ section.settings.title  }}</h1>
+			<article>{{ section.settings.text  }}</article>
+			<div class="button_link">
+				<a href="{{ section.settings.buttonl  }}">{{ section.settings.buttont  }}</a>
+			</div>
+		</div>
+	</div>
+</div>
+  {% render "home-hero-animation"  %}
+</section>
+
+{% schema %}
+{
+    "name": "Home - Hero",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "Your passport to euphoric vibes"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Missing that tropical breeze from last year’s vacation? REALLY need to replace that after-work cocktail? Unwind like you’re OOO!</p>",
+          "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "buttont",
+          "label": "Button Text",
+          "default": "Taste Your Relief"
+        },
+        {
+          "type": "textarea",
+          "id": "buttonl",
+          "label": "Button Link",
+          "default": "#"
+        },
+        {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Background Image (Desktop)"
+        },
+        {
+            "type":"image_picker",
+            "id":"image2",
+            "label":"Background Image (Mobile)"
+        }
+    ],
+    "blocks": [],
+    "presets": [
+        {
+          "name": "Home - Hero",
+          "blocks": []
+        }
+    ]
+}
+{% endschema %}

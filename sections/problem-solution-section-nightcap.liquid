@@ -1,0 +1,197 @@
+{{ 'problem-solution.css' | asset_url | stylesheet_tag }}
+
+<style type="text/css">
+  {% if section.settings.section_bacground_color != blank %}
+    .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}{
+      background-color:{{section.settings.section_bacground_color}};
+    }
+  {% endif %}
+
+.problem-solution-section{
+    padding: 90px 25px 94px 25px;
+}
+.problem-solution-section__title {
+    padding-bottom: 5px;
+}
+.problem-solution-section__slides{
+    max-width: 1006px;
+    margin: 0px auto;
+}
+.problem-solution-section__slide {
+    border-radius: 35px;
+    background: #F5F7FF;
+    row-gap: 0px;
+    display: block;
+    padding-top: 40px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 42px;
+    box-sizing: border-box;
+}
+.problem-solution-section__slide .problem-solution-section__slide-title{
+    height: auto;
+    min-height: unset;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.17;
+    padding-bottom: 20px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+.problem-solution-section__slide .problem-solution-section__slide-image{
+    display: block;
+    margin: 0px auto;
+    width: 98px;
+    height: 98px;
+    border: 0px solid #A7D29B;
+    margin-bottom: 22px;
+}
+.problem-solution-section__slide .problem-solution-section__slide-image img{}
+.problem-solution-section__slide .problem-solution-section__slide-description{
+    letter-spacing: 1.14px;
+    line-height: 1.66;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+  
+@media(max-width:768px) {
+    .problem-solution-section {
+        padding: 60px 0px 40px 0px;
+        display: block;
+    }
+
+    .problem-solution-section__title {
+        font-size: 28px;
+        padding-bottom: 25px;
+        padding-top: 0px;
+    }
+
+.swiper-buttons-container {
+    margin-bottom: 0px;
+    padding-top: 45px;
+}
+    {% if section.settings.section_bacground_color_mobile != blank %}
+      .uid{{ section.id }}{% if section.settings.sectionclass != blank %}.{{ section.settings.sectionclass }}{% endif %}{
+        background-color:{{section.settings.section_bacground_color_mobile}};
+      }
+    {% endif %}
+}
+</style>
+
+<div class="problem-solution-section uid{{ section.id }} {{ section.settings.sectionclass }}">
+    <div class="problem-solution-section__title">{{ section.settings.title }}</div>
+    <div class="problem-solution-section__slides swiper">
+        <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+                <div class="problem-solution-section__slide swiper-slide">
+                    <h4 class="problem-solution-section__slide-title">{{ block.settings.slide_title }}</h4>
+                    <div class="problem-solution-section__slide-image">
+                        <img src="{{ block.settings.slide_image | img_url: 'master' }}" alt="">
+                    </div>
+                    <p class="problem-solution-section__slide-description">{{ block.settings.slide_description }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="swiper-buttons-container">
+        <div class="swiper-button-prev">
+            <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.2782 27.7528C11.7278 28.2181 12.476 28.2181 12.9413 27.7528C13.3909 27.3033 13.3909 26.555 12.9413 26.1065L4.50842 17.6736L32.3357 17.6736C32.9844 17.6726 33.5 17.157 33.5 16.5083C33.5 15.8596 32.9844 15.3273 32.3357 15.3273L4.50842 15.3273L12.9413 6.91013C13.3909 6.44484 13.3909 5.69555 12.9413 5.24703C12.476 4.78174 11.7267 4.78174 11.2782 5.24703L0.84897 15.6762C0.383679 16.1258 0.383679 16.874 0.848969 17.3226L11.2782 27.7528Z" fill="#023940"/>
+            </svg>
+                
+        </div>
+        <div class="swiper-button-next">
+            <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.7218 5.24716C22.2722 4.78187 21.524 4.78187 21.0587 5.24716C20.6091 5.69673 20.6091 6.44497 21.0587 6.89349L29.4916 15.3264H1.66427C1.01559 15.3274 0.5 15.843 0.5 16.4917C0.5 17.1404 1.01559 17.6727 1.66427 17.6727H29.4916L21.0587 26.0899C20.6091 26.5552 20.6091 27.3044 21.0587 27.753C21.524 28.2183 22.2733 28.2183 22.7218 27.753L33.151 17.3238C33.6163 16.8742 33.6163 16.1259 33.151 15.6774L22.7218 5.24716Z" fill="#023940"/>
+            </svg>
+                
+        </div>
+    </div>
+</div>
+                  
+<script>
+    document.addEventListener('DOMContentLoaded',() =>{
+          const carouselPdpMain = new Swiper(".problem-solution-section__slides", {
+           navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+
+          // breakpoints en mobile
+            breakpoints: {
+                0: {
+                slidesPerView: 3,
+                spaceBetween: 12,
+                centeredSlides: true,
+                },
+                768: {
+                slidesPerView: 2,
+                spaceBetween: 42,
+                },
+                1024: {
+                spaceBetween: 42,
+                slidesPerView: 3,
+                },
+            },
+        });
+      })
+  </script>
+
+{% schema %}
+{
+    "name": "Problem-Solution Nightcap",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+        },
+        {
+          "type": "color",
+          "id": "section_bacground_color",
+          "label": "Desktop Background Color"
+        },
+        {
+          "type": "color",
+          "id": "section_bacground_color_mobile",
+          "label": "Mobile Background Color"
+        },
+        {
+          "type": "text",
+          "id": "sectionclass",
+          "label": "Section Class",
+        }
+    ],
+    "blocks": [
+        {
+        "type":"slide",
+        "name": "Slide",
+        "settings": [
+            {
+                "type":"text",
+                "label": "Title",
+                "id": "slide_title"
+            },              
+            {
+                "type":"image_picker",
+                "label": "Image",
+                "id": "slide_image"
+            },          
+            {
+                "type":"textarea",
+                "label": "Text description",
+                "id": "slide_description"
+            },
+        ]
+        }
+    ],
+    "presets": [
+        {
+          "name": "Problem-Solution Nightcap",
+          "blocks": []
+        }
+    ]
+}
+{% endschema %}

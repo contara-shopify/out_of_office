@@ -1,0 +1,482 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "theme.ooo-drink-lander",
+  "sections": {
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "lander_hero_4Pcfcn": {
+      "type": "lander-hero",
+      "blocks": {
+        "image_Tihrf4": {
+          "type": "Image",
+          "settings": {
+            "imgSlider": "shopify://shop_images/OOO_Drink_Site_Product_Images_RASLEM_5MG_P4.jpg"
+          }
+        },
+        "image_CkLRyr": {
+          "type": "Image",
+          "settings": {
+            "imgSlider": "shopify://shop_images/OOO_Drink_Site_Product_Images_RASLEM_P5.jpg"
+          }
+        },
+        "image_hVUHRD": {
+          "type": "Image",
+          "settings": {
+            "imgSlider": "shopify://shop_images/OOO_Drink_Site_Product_Images_RASLEM_5MG_P1.jpg"
+          }
+        },
+        "image_QNk4RA": {
+          "type": "Image",
+          "settings": {
+            "imgSlider": "shopify://shop_images/OOO_Drink_Site_Product_Images_CML_5MG_P4.jpg"
+          }
+        },
+        "image_qPJPc4": {
+          "type": "Image",
+          "settings": {
+            "imgSlider": "shopify://shop_images/OOO_Drink_Site_Product_Images_CML_5MG_P3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_Tihrf4",
+        "image_CkLRyr",
+        "image_hVUHRD",
+        "image_QNk4RA",
+        "image_qPJPc4"
+      ],
+      "settings": {
+        "show": true,
+        "hero_img_section": "shopify://shop_images/Hero_-_v2.png",
+        "hero_img_section_mobile": "shopify://shop_images/Hero_Mob_1.png",
+        "title": "4.8 / 1860 Reviews",
+        "stars": "New Customers Save 30%",
+        "subtitle": "Start your relaxation journey with Out of Office and enjoy 30% off your first order using code NEWSOUL. Kick back, unwind, and experience the perfect way to turn every day into a vacay.",
+        "legacy": "",
+        "list": "<ul><li>Immediate enjoyment</li><li>Enjoy that warm, fuzzy, microdosed feeling</li><li>A microdosed experience with the same delicious Soul flavor</li></ul>",
+        "btn": "SHOP NOW",
+        "link": "/pages/age-gate-2",
+        "secondary_btn": "",
+        "secondary_link": "/pages/age-gate-2",
+        "section_class": "ooo-drink-lander-s2"
+      }
+    },
+    "b3e26656-d50c-49f9-b109-722c8dc1f6cf": {
+      "type": "Out-of-Office-Hero",
+      "disabled": true,
+      "settings": {
+        "title": "Your passport to euphoric vibes.",
+        "text": "<p>Want a microdose that won't send you to the moon? Really need to replace that after-work cocktail? Unwind like you’re OOO!</p>",
+        "buttont": "FIND YOUR CHILL",
+        "buttonl": "/products/out-of-office-gummies",
+        "image": "shopify://shop_images/compliant-hero-1.jpg",
+        "image2": "shopify://shop_images/compliant-hero-mobile.jpg"
+      }
+    },
+    "5ce7dd2c-453e-4983-aa49-e35209fbd499": {
+      "type": "Out-of-Office-Testimonials",
+      "blocks": {
+        "fd00cfb8-3e5f-419a-b3d8-503fb7d1aca5": {
+          "type": "testimonials",
+          "settings": {
+            "title": "Just What I Needed",
+            "text": "<p>These help me relax after a long day and help me get some good *** sleep lol you just got a loyal customer!! Great product guys.</p>",
+            "tesname": "- C. Andretti",
+            "image2": "shopify://shop_images/5_star_gold.svg",
+            "imagealt2": ""
+          }
+        },
+        "70f4ce1a-cc36-4b5a-952b-84bd5500e8c0": {
+          "type": "testimonials",
+          "settings": {
+            "title": "The Perfect Nightcap Replacement",
+            "text": "<p>These gummies are great after a long day, when I need to unwind but still get a good night's sleep. I used to have a glass of wine a few times a week and that is goneee and replaced by these amazing gummies.</p>",
+            "tesname": "-  Cameron K.",
+            "image2": "shopify://shop_images/5_star_gold.svg",
+            "imagealt2": ""
+          }
+        },
+        "5532949d-9ab8-4898-a414-ab0f6f294446": {
+          "type": "testimonials",
+          "settings": {
+            "title": "Just The Perfect Amount Of ‘Chill’.",
+            "text": "<p>These Gummies are the perfect stress solution for me. They help me relax and calm down at the end of a stressful day, yet I’m still alert enough to enjoy my evening. And they taste amazing!</p>",
+            "tesname": "- Coryn L.",
+            "image2": "shopify://shop_images/5_star_gold.svg",
+            "imagealt2": ""
+          }
+        },
+        "f10fd6a4-174c-42c9-ba3a-1b7caccf84a4": {
+          "type": "testimonials",
+          "settings": {
+            "title": "Amazing!!!",
+            "text": "<p>These are so good, taste and quality. It literally is like a breathe of fresh air taking one after work. I am so much more calm. My limit is 1 per night lol best sleep ever too!!</p>",
+            "tesname": "- Melissa H.",
+            "image2": "shopify://shop_images/5_star_gold.svg",
+            "imagealt2": ""
+          }
+        },
+        "4495a803-0d9d-414f-8af5-7590cb8d6f2a": {
+          "type": "testimonials",
+          "settings": {
+            "title": "Best Sleep Yet",
+            "text": "<p>I’m almost done with my first container of gummies. I’ve noticed deeper sleep and less anxiousness. It’s definitely working well for me.</p>",
+            "tesname": "",
+            "image2": "shopify://shop_images/5_star_gold.svg",
+            "imagealt2": ""
+          }
+        }
+      },
+      "block_order": [
+        "fd00cfb8-3e5f-419a-b3d8-503fb7d1aca5",
+        "70f4ce1a-cc36-4b5a-952b-84bd5500e8c0",
+        "5532949d-9ab8-4898-a414-ab0f6f294446",
+        "f10fd6a4-174c-42c9-ba3a-1b7caccf84a4",
+        "4495a803-0d9d-414f-8af5-7590cb8d6f2a"
+      ],
+      "settings": {
+        "subtitle": "Testimonials",
+        "title": "What they Say",
+        "move_image_bottom": true,
+        "image": "shopify://shop_images/raspberry-ooo-gummies_1920X_fc0c885f-67fc-4d2a-bf5f-a6fe8657f343.png",
+        "imagealt": "",
+        "btn_label": "SHOP THE SALE",
+        "btn_link": "/pages/age-gate-2",
+        "section_padding_d": "40px 0 190px 0",
+        "section_padding_m": "40px 0 120px 0",
+        "show_bottom_svg": true,
+        "section_class": "ooo-drink-lander-s5"
+      }
+    },
+    "34722638-ed4e-4e86-b570-2b0e79ea8e03": {
+      "type": "Out-of-Office-Turn-Faq",
+      "blocks": {
+        "21bb47d1-e64c-4f1f-97d4-c71e56d97017": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "How many Out of Office Gummies should I take?",
+            "text": "<p>We recommend starting small with 1//2to 1 full gummy. You can always take more, not less.</p>"
+          }
+        },
+        "d60e3faa-6d09-4e48-a6a6-4d439bb830f3": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "How will I feel when taking Out of Office Gummies?",
+            "text": "<p>Most people report feelings of mild euphoria and bliss. </p>"
+          }
+        },
+        "db2da474-b432-42ca-849d-03d041925190": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "What is microdosing?",
+            "text": "<p>Microdosing refers to the practice of consuming a very small, subthreshold amount of a substance, typically below the level that would cause noticeable physiological effects.</p>"
+          }
+        },
+        "aba33b5f-3b4f-49d5-bfd3-b6a0897afaaf": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Where do you ship to?",
+            "text": "<p>We ship to all 50 states in the United States.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "21bb47d1-e64c-4f1f-97d4-c71e56d97017",
+        "d60e3faa-6d09-4e48-a6a6-4d439bb830f3",
+        "db2da474-b432-42ca-849d-03d041925190",
+        "aba33b5f-3b4f-49d5-bfd3-b6a0897afaaf"
+      ],
+      "settings": {
+        "subtitle": "You’ve Got Questions",
+        "title": "We’ve Got Answers.",
+        "section_class": "ooo-drink-lander-s6"
+      }
+    },
+    "6ffdd854-1713-4c80-bc48-d4f5af11b0b4": {
+      "type": "Out-of-Office-What-To-Expect",
+      "blocks": {
+        "ae169fce-21ac-42df-9cf4-4ac0551bcd1b": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "A Microdosed Experience",
+            "text": "<p>It’s a small amount, so you can get buzzed, not blitzed.</p>"
+          }
+        },
+        "cf7f1936-c306-43bb-83b4-13b49097d4a1": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Immediate Enjoyment",
+            "text": "<p>These delightful little treats are fast acting, without being overwhelming.</p>"
+          }
+        },
+        "fdd27ba7-35b4-41dd-b84e-2d5a396ef1d9": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Replace Your Glass Of Wine",
+            "text": "<p>You get a mild buzz, without having to drink. Gummies &gt; hangovers!</p>"
+          }
+        },
+        "8d310fca-8b79-4b21-a452-14d492814c07": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Enhanced Focus And Creativity",
+            "text": "<p>Whether you've got a full inbox to clear or you're creating a symphony, Out of Office can help you get there.</p>"
+          }
+        },
+        "dcb6fdb0-91e0-4b6d-8463-90fca9e42c04": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Melatonin Substitute",
+            "text": "<p>We know melatonin isn't for everyone. With Out of Office, your sleep can still be on point!</p>"
+          }
+        },
+        "42411f9b-6c53-444f-b9b8-cbe31578cd51": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "The Most Delicious",
+            "text": "<p>We know how to make everything taste great. Did you expect anything less?</p>"
+          }
+        }
+      },
+      "block_order": [
+        "ae169fce-21ac-42df-9cf4-4ac0551bcd1b",
+        "cf7f1936-c306-43bb-83b4-13b49097d4a1",
+        "fdd27ba7-35b4-41dd-b84e-2d5a396ef1d9",
+        "8d310fca-8b79-4b21-a452-14d492814c07",
+        "dcb6fdb0-91e0-4b6d-8463-90fca9e42c04",
+        "42411f9b-6c53-444f-b9b8-cbe31578cd51"
+      ],
+      "settings": {
+        "subtitle": "What To Expect",
+        "title": "Unwind like you’re on Vacay.",
+        "image": "shopify://shop_images/OOO_Drink_Site_Product_Images_RASLEM_5MG_P2.jpg",
+        "show_small_image": true,
+        "small_image": "shopify://shop_images/Radio_Cutout_1_1920X_ccc1554f-19bf-429e-93d5-21495c410c6d.png",
+        "show_buttonl": true,
+        "buttont": "SHOP NOW",
+        "buttonl": "/pages/age-gate-2",
+        "section_class": "ooo-drink-lander-s7"
+      }
+    },
+    "9233de62-80d6-4a5b-964b-5080da23d311": {
+      "type": "Out-of-Office-Us-Vs-Them",
+      "blocks": {
+        "09cd4106-d246-4f8d-bc90-8210b637f79e": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "",
+            "ustitle": "OOO <br>GUMMIES",
+            "image": "shopify://shop_images/oo-b.svg",
+            "themetitle": "THE OTHER <br>GUYS",
+            "image2": "shopify://shop_images/ooo-o.svg"
+          }
+        },
+        "5feede31-8903-41b0-9c31-dcf5eeef8ccb": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "A Microdose You Can Feel",
+            "ustitle": "",
+            "image": "shopify://shop_images/ch.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/cr.svg"
+          }
+        },
+        "661ebcd7-cdcc-48d2-b1be-d7a860c0b492": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Won’t Send You Into Orbit",
+            "ustitle": "",
+            "image": "shopify://shop_images/ch.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/cr.svg"
+          }
+        },
+        "6c784d30-c2cf-466b-88d3-bdf11dd4b07c": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Delicious (Duh!)",
+            "ustitle": "",
+            "image": "shopify://shop_images/ch.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/cr.svg"
+          }
+        },
+        "0e32430e-5e9f-4649-84f8-e487d9715966": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "No Fake Stuff",
+            "ustitle": "",
+            "image": "shopify://shop_images/ch.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/cr.svg"
+          }
+        },
+        "947bdf0e-a789-419e-aeb0-5478ecf354ca": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Organically Grown Hemp",
+            "ustitle": "",
+            "image": "shopify://shop_images/ch.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/cr.svg"
+          }
+        },
+        "c93094f7-4495-45c3-89b0-720b95b2b46e": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Low Sugar (2G)",
+            "ustitle": "",
+            "image": "shopify://shop_images/ch.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/cr.svg"
+          }
+        },
+        "56b5ab13-38a4-4cba-92fd-7e458105c67a": {
+          "type": "usvsthem",
+          "settings": {
+            "title": "Vegan & Gluten Free",
+            "ustitle": "",
+            "image": "shopify://shop_images/ch.svg",
+            "themetitle": "",
+            "image2": "shopify://shop_images/cr.svg"
+          }
+        }
+      },
+      "block_order": [
+        "09cd4106-d246-4f8d-bc90-8210b637f79e",
+        "5feede31-8903-41b0-9c31-dcf5eeef8ccb",
+        "661ebcd7-cdcc-48d2-b1be-d7a860c0b492",
+        "6c784d30-c2cf-466b-88d3-bdf11dd4b07c",
+        "0e32430e-5e9f-4649-84f8-e487d9715966",
+        "947bdf0e-a789-419e-aeb0-5478ecf354ca",
+        "c93094f7-4495-45c3-89b0-720b95b2b46e",
+        "56b5ab13-38a4-4cba-92fd-7e458105c67a"
+      ],
+      "settings": {
+        "subtitle": "Us Vs. Them",
+        "title": "Now every day can feel like a <span>Vacay.</span>",
+        "image": "shopify://shop_images/s4-2.png",
+        "image2": "shopify://shop_images/ps6-bg.png",
+        "show_bottom_svg": false,
+        "section_class": "ooo-drink-lander-s8"
+      }
+    },
+    "dadf9bf4-02e2-4404-8436-a2dce24e749e": {
+      "type": "Out-of-Office-Subscribe-Save",
+      "blocks": {
+        "3781f8c3-b9d5-4b8c-8608-3df18a541464": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Save 15% On Every Subscription Order"
+          }
+        },
+        "c5758983-f8a2-4b48-ab6a-c8aacfc69ef3": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Swap, Pause, Cancel Anytime"
+          }
+        },
+        "1ffb9bf1-5a14-4e75-abf5-7a0ebc948d52": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Free Shipping On Subscription Orders"
+          }
+        },
+        "077201ba-4b8d-438d-be6d-d6c97efa7c4e": {
+          "type": "subscribesave",
+          "settings": {
+            "title": "Never Run Out Of Your Gummies"
+          }
+        }
+      },
+      "block_order": [
+        "3781f8c3-b9d5-4b8c-8608-3df18a541464",
+        "c5758983-f8a2-4b48-ab6a-c8aacfc69ef3",
+        "1ffb9bf1-5a14-4e75-abf5-7a0ebc948d52",
+        "077201ba-4b8d-438d-be6d-d6c97efa7c4e"
+      ],
+      "settings": {
+        "subtitle": "Subscribe & Save",
+        "title": "The Most Chill <br>Delivered to Your Door, <br><span>Hassle Free</span>",
+        "buttont": "Subscribe & Save",
+        "buttonl": "/pages/age-gate-2",
+        "image": "shopify://shop_images/OOO_Drink_Site_Product_Images_CML_5MG_P1.jpg",
+        "imagealt": "",
+        "section_class": "ooo-drink-lander-s9"
+      }
+    },
+    "edec44c0-3af0-466d-a756-edd190c57fc0": {
+      "type": "Out-of-Office-Take-The-Edge",
+      "disabled": true,
+      "settings": {
+        "title": "Experience a <span>100% legal</span> microdosed gummy.",
+        "text": "<p>Yes, you read that right. Out of Office is a legal, euphoric drinking alternative, delivered straight to your door.</p>",
+        "buttont": "Learn more about microdosing",
+        "buttonl": "/blogs/thc-education",
+        "section_class": ""
+      }
+    },
+    "d8508561-b8fb-423e-8f2d-068dd5a3447b": {
+      "type": "Out-of-Office-Form",
+      "settings": {
+        "title": "Our emails are (almost) as <span>good</span> as our gummies.",
+        "show_top_svg": false,
+        "sectionclass": "ooo-drink-lander-s10"
+      }
+    },
+    "html_code_qFFgWJ": {
+      "type": "html_code",
+      "settings": {
+        "html_code": "<link href=\"//tryoutofoffice.com/cdn/shop/t/4/assets/ooo-drink-lander-style.css?v=176451154362351806801739294053\" rel=\"stylesheet\" type=\"text/css\" media=\"all\">"
+      }
+    }
+  },
+  "order": [
+    "featured_collection",
+    "lander_hero_4Pcfcn",
+    "b3e26656-d50c-49f9-b109-722c8dc1f6cf",
+    "5ce7dd2c-453e-4983-aa49-e35209fbd499",
+    "34722638-ed4e-4e86-b570-2b0e79ea8e03",
+    "6ffdd854-1713-4c80-bc48-d4f5af11b0b4",
+    "9233de62-80d6-4a5b-964b-5080da23d311",
+    "dadf9bf4-02e2-4404-8436-a2dce24e749e",
+    "edec44c0-3af0-466d-a756-edd190c57fc0",
+    "d8508561-b8fb-423e-8f2d-068dd5a3447b",
+    "html_code_qFFgWJ"
+  ]
+}
