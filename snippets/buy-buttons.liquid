@@ -47,7 +47,7 @@
       {%- form 'product',
         product,
         id: product_form_id,
-        class: 'form',
+        class: 'form form-skio-selector',
         novalidate: 'novalidate',
         data-type: 'add-to-cart-form'
       -%}
@@ -88,6 +88,7 @@
               {%- else -%}
                 {{ 'products.product.add_to_cart' | t }}
               {%- endif -%}
+              <span class="product-form__submit-price"></span>
             </span>
             <div class="loading-overlay__spinner hidden">
               <svg
@@ -105,6 +106,7 @@
             {{ form | payment_button }}
           {%- endif -%}
         </div>
+        <input type="hidden" name="selling_plan" value="">
       {%- endform -%}
     </product-form>
   {%- else -%}

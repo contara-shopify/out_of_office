@@ -15,6 +15,21 @@
     {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
   {%- endif -%}
 
+  {% for block in section.blocks %}
+    {% if block.type == 'skio' %}
+      <!-- Alpine Core -->
+      <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <style>
+        [x-cloak] { display: none !important; }
+      </style>
+      <!-- Alpine Custom Skio Scripts -->
+      {{ 'ctr-product-skio.js' | asset_url | script_tag }}
+      {{ 'subscription-toggle.css' | asset_url | stylesheet_tag }}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+
   {%- style -%}
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -1135,7 +1150,19 @@
                   </div>
                   {% endif %}
               </div>
-            
+            {%- when 'skio' -%}
+              {% comment %} {% assign skio = block.settings.skio_data %} {% endcomment %}
+
+              {% comment %} {% if skio %} {% endcomment %}
+                <div x-data="SkioComponent" x-cloak>
+                  {% render 'subscription-skio-contara' product: product, skio_data: skio %}
+                  <script type="application/json" x-ref="productDataJson">
+                    {{ product | json }}
+                  </script>
+                </div>
+              {% comment %} {% else %}
+                <h2>Skio metaobject not selected</h2>
+              {% endif %} {% endcomment %}
             {%- when 'sku' -%}
               <p
                 class="product__sku no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -1890,12 +1917,24 @@ jQuery(document).ready(function($) {
       "limit": 1
     },
     {
+      "type": "skio",
+      "name": "Skio Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "skio_info",
+          "label": "Choose Skio Data",
+          "default": "You’re in control. Adjust or cancel any time through our passwordless subscriber portal."
+        }
+      ]
+    },
+    {
       "type": "variant_picker",
       "name": "t:sections.main-product.blocks.variant_picker.name",
       "limit": 1,
       "settings": [
         {
-          "type": "select",
+          "type": "select", 
           "id": "picker_type",
           "options": [
             {

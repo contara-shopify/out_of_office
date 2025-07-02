@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "main": {
       "type": "main-product",
@@ -36,6 +36,12 @@
         "0a2f2b2a-988d-432d-be5a-b987c141ff7f": {
           "type": "shopify://apps/recurly-commerce-by-prive/blocks/subs-widget-block/42050940-af72-406b-ba49-06f437b1dbb5",
           "settings": {}
+        },
+        "skio_LjkfCq": {
+          "type": "skio",
+          "settings": {
+            "skio_data": ""
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -73,6 +79,7 @@
         "826b830c-7b45-40d3-8a13-702ebdb6338e",
         "price",
         "0a2f2b2a-988d-432d-be5a-b987c141ff7f",
+        "skio_LjkfCq",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",

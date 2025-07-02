@@ -1,0 +1,169 @@
+.b-skio {
+  padding-right: 48px;
+  margin-bottom: 7px;
+}
+
+@media screen and (max-width: 767px) {
+  .b-skio {
+    padding-right: 0;
+  }
+}
+
+.b-skio__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.b-skio__wrapper.subscription-toggle {
+  display: none;
+}
+
+.b-skio__box {
+  background-color: #FFEDB8;
+  padding: 17px 27px 18px 27px;
+  border-radius: 30px;
+  border: 1px solid #FFEDB8;
+  cursor: pointer;
+}
+
+.b-skio__box.m-selected .b-skio__box--radiobtn::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.b-skio__box-select {
+  width: 100%;
+  font-family: Poppins ,sans-serif;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 5px 3px;
+  color: #222E31;
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+
+.b-skio__box-select option {
+  font-weight: 500 !important;
+  cursor: pointer;
+}
+
+.b-skio__box-select:focus-visible {
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.b-skio__box--title {
+  font-size: 13px;
+  color: #222E31;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.b-skio__box--title_txt {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.b-skio__box--title_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.b-skio__box--title_price .prive_info_container {
+  display: block;
+  font-weight: normal;
+  width: 16px;
+  height: 16px;
+}
+
+.b-skio__box--radiobtn {
+  position: relative;
+  max-width: 13px;
+  max-height: 13px;
+  min-width: 13px;
+  min-height: 13px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid #222E31;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.b-skio__box--radiobtn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #222E31;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.b-skio__box-description {
+  display: none;
+}
+
+.b-skio .prive_info_container {
+  position: relative;
+}
+
+.b-skio .prive_info_container:hover .prive_tooltip_text {
+  visibility: visible;
+}
+
+.b-skio .prive_tooltip_text {
+  visibility: hidden;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+  width: 320px;
+  padding: 5px;
+  border-radius: 6px;
+  bottom: 100%;
+  left: -300px;
+  background-color: #f5f5f9;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+}
+/*# sourceMappingURL=subscription-toggle.css.map */
