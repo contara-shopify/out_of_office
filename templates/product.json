@@ -33,14 +33,10 @@
           "type": "price",
           "settings": {}
         },
-        "0a2f2b2a-988d-432d-be5a-b987c141ff7f": {
-          "type": "shopify://apps/recurly-commerce-by-prive/blocks/subs-widget-block/42050940-af72-406b-ba49-06f437b1dbb5",
-          "settings": {}
-        },
         "skio_LjkfCq": {
           "type": "skio",
           "settings": {
-            "skio_data": ""
+            "skio_info": "You’re in control. Adjust or cancel any time through our passwordless subscriber portal."
           }
         },
         "variant_picker": {
@@ -78,7 +74,6 @@
         "title",
         "826b830c-7b45-40d3-8a13-702ebdb6338e",
         "price",
-        "0a2f2b2a-988d-432d-be5a-b987c141ff7f",
         "skio_LjkfCq",
         "variant_picker",
         "quantity_selector",
