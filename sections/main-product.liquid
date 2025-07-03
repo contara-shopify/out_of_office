@@ -1151,7 +1151,7 @@
                   {% endif %}
               </div>
             {%- when 'skio' -%}
-              {% comment %} {% assign skio = block.settings.skio_data %} {% endcomment %}
+              {% assign skio = block.settings.skio_info %}
 
               {% comment %} {% if skio %} {% endcomment %}
                 <div x-data="SkioComponent" x-cloak>

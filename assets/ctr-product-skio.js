@@ -26,6 +26,13 @@ document.addEventListener('alpine:init', () => {
         this.mapVariants();                 // Map all variants with named option objects
         this.getSkioData();                 // Get SKIO data
         this.getVariantIdFromUrl();         // Get variant ID from URL
+        if (!this.selectedVariant && this.variants.length > 0) {
+          this.selectedVariant = this.variants[0];
+          console.log('[Skio] Fallback selectedVariant:', this.selectedVariant);
+        }
+
+
+
         this.observeVariantBlockChanges();  // Observe changes in the variant block for dynamic updates
         this.setInitialSellingPlan();
 
