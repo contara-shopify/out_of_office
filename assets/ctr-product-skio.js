@@ -31,9 +31,7 @@ document.addEventListener('alpine:init', () => {
           console.log('[Skio] Fallback selectedVariant:', this.selectedVariant);
         }
 
-
-
-        this.observeVariantBlockChanges();  // Observe changes in the variant block for dynamic updates
+        this.observeVariantBlockChanges(); // Observe changes in the variant block
         this.setInitialSellingPlan();
 
         if (this.form_product) {
@@ -118,15 +116,22 @@ document.addEventListener('alpine:init', () => {
        * @param {String} selector - The CSS selector for the variant block
        * */
       observeVariantBlockChanges() {
-        const target = document.querySelector('.the_double_variant_legend');
+        const target = document.querySelector('.variants-block');
+        if (!target) {
+          console.warn('[Skio] .the_double_variant_legend not found');
+          return;
+        }
         const inputsVariants = target.querySelectorAll('.variant-image-input');
-        
+        if (!inputsVariants || inputsVariants.length === 0) {
+          console.warn('[Skio] No variant inputs found in .the_double_variant_legend');
+          return;
+        }
         inputsVariants.forEach(input => {
           input.addEventListener('change', () => {
             setTimeout(() => {
               this.getVariantIdFromUrl(); // Ensure we get the latest variant ID from URL
               this.checkAddToCartPrice(); // Update price display after variant change
-            }, 200); // Delay to ensure the variant change is processed
+            }, 350);                      // Delay to ensure the variant change is processed
           });
         });
 
