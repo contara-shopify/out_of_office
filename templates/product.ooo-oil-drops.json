@@ -34,8 +34,15 @@
           "settings": {}
         },
         "0a2f2b2a-988d-432d-be5a-b987c141ff7f": {
-          "type": "shopify://apps/prive-subscriptions/blocks/subs-widget-block/42050940-af72-406b-ba49-06f437b1dbb5",
+          "type": "shopify://apps/recurly-commerce-by-prive/blocks/subs-widget-block/42050940-af72-406b-ba49-06f437b1dbb5",
+          "disabled": true,
           "settings": {}
+        },
+        "skio_QLHddK": {
+          "type": "skio",
+          "settings": {
+            "skio_info": "You’re in control. Adjust or cancel any time through our passwordless subscriber portal."
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -73,6 +80,7 @@
         "826b830c-7b45-40d3-8a13-702ebdb6338e",
         "price",
         "0a2f2b2a-988d-432d-be5a-b987c141ff7f",
+        "skio_QLHddK",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",

@@ -30,8 +30,7 @@
             "show_earn_rules": true,
             "show_redeem_rules": true,
             "show_loyalty_tiers": true,
-            "show_referrals": true,
-            "show_affiliate": true
+            "show_referrals": true
           }
         }
       },
